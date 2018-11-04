@@ -1,6 +1,6 @@
 # Modules
 
-# Completed Modules
+## Completed Modules
 
 | Module                        | Amount built  | 
 | ----------------------------- | ------------- | 
