@@ -147,9 +147,9 @@
 <wire x1="115.621" y1="6.35" x2="115.621" y2="49.52" width="0" layer="20"/>
 <wire x1="115.621" y1="49.52" x2="3.81" y2="49.52" width="0" layer="20"/>
 <wire x1="3.81" y1="49.52" x2="3.81" y2="6.35" width="0" layer="20"/>
-<text x="71.12" y="62.23" size="1.27" layer="25">It broke my heart when I learned</text>
-<text x="71.12" y="59.69" size="1.27" layer="25">the moon had been passing </text>
-<text x="71.12" y="57.15" size="1.27" layer="25">the sun's light off as it's own</text>
+<text x="35.56" y="45.72" size="1.778" layer="25">PGTN016</text>
+<text x="80.01" y="45.72" size="1.778" layer="25">Slope</text>
+<text x="70.866" y="7.112" size="1.27" layer="25">2019 Robert Ellis</text>
 </plain>
 <libraries>
 <library name="connectors">
@@ -853,6 +853,9 @@ einem neuen Namen ab.</description>
 <element name="U$3" library="mechanical" package="STANDOFF/3.0" value="" x="7.62" y="10.16"/>
 <element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="7.62" y="45.72"/>
 <element name="U$5" library="mechanical" package="PIGATRON-LOGO" value="" x="21.59" y="45.72"/>
+<element name="LED+" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="22.86" y="7.62" rot="R90">
+<attribute name="SPICEPREFIX" value="X" x="22.86" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -954,6 +957,12 @@ einem neuen Namen ab.</description>
 <wire x1="15.24" y1="10.16" x2="15.24" y2="12.7" width="0.3048" layer="1"/>
 <wire x1="15.24" y1="12.7" x2="11.43" y2="16.51" width="0.3048" layer="1"/>
 <wire x1="11.43" y1="16.51" x2="11.43" y2="17.78" width="0.3048" layer="1"/>
+<contactref element="LED+" pad="1"/>
+<wire x1="22.86" y1="13.0175" x2="22.86" y2="7.62" width="0.3048" layer="16"/>
+<wire x1="21.2725" y1="14.605" x2="22.86" y2="13.0175" width="0.3048" layer="16"/>
+<wire x1="16.8275" y1="14.605" x2="21.2725" y2="14.605" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="13.0175" x2="16.8275" y2="14.605" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="13.0175" width="0.3048" layer="16"/>
 </signal>
 <signal name="-12V">
 <contactref element="-V" pad="1"/>

@@ -1645,6 +1645,12 @@ Piher</description>
 <part name="LED-" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
+<part name="LED+" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="SUPPLY38" library="supply" deviceset="+12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1824,6 +1830,8 @@ Piher</description>
 <instance part="SUPPLY37" gate="GND" x="203.2" y="-218.44"/>
 <instance part="R62" gate="G$1" x="203.2" y="-200.66" rot="R90"/>
 <instance part="LED-" gate="HEADER" x="205.74" y="-195.58" rot="R180"/>
+<instance part="LED+" gate="HEADER" x="226.06" y="-198.12"/>
+<instance part="SUPPLY38" gate="+12V" x="228.6" y="-195.58"/>
 </instances>
 <busses>
 </busses>
@@ -2024,6 +2032,10 @@ Piher</description>
 <segment>
 <pinref part="R51" gate="G$1" pin="2"/>
 <pinref part="SUPPLY30" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="LED+" gate="HEADER" pin="3"/>
+<pinref part="SUPPLY38" gate="+12V" pin="+12V"/>
 </segment>
 </net>
 <net name="-12V" class="0">
