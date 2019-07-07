@@ -1608,7 +1608,7 @@ Piher</description>
 <part name="SUPPLY32" library="supply" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="C12" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6"/>
+<part name="C12" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="47uF"/>
 <part name="R56" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="1M"/>
 <part name="SUPPLY33" library="supply" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
@@ -1715,7 +1715,7 @@ Piher</description>
 <instance part="IC3" gate="A" x="185.42" y="17.78" rot="MR180"/>
 <instance part="IC3" gate="B" x="218.44" y="-165.1" rot="MR180"/>
 <instance part="IC3" gate="C" x="149.86" y="-167.64" rot="MR180"/>
-<instance part="IC3" gate="D" x="99.06" y="-55.88"/>
+<instance part="IC3" gate="D" x="99.06" y="-55.88" rot="MR180"/>
 <instance part="IC2" gate="P" x="48.26" y="53.34"/>
 <instance part="IC3" gate="P" x="55.88" y="53.34"/>
 <instance part="C6" gate="G$1" x="93.98" y="-43.18" rot="R90"/>
@@ -2254,14 +2254,14 @@ Piher</description>
 <wire x1="152.4" y1="-76.2" x2="88.9" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-76.2" x2="88.9" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="152.4" y="-76.2"/>
-<pinref part="IC3" gate="D" pin="-IN"/>
+<pinref part="IC3" gate="D" pin="+IN"/>
 <wire x1="91.44" y1="-58.42" x2="88.9" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<wire x1="114.3" y1="-58.42" x2="114.3" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="-58.42" x2="114.3" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-55.88" x2="114.3" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-43.18" x2="111.76" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -2284,8 +2284,8 @@ Piher</description>
 <wire x1="88.9" y1="-43.18" x2="91.44" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="-53.34" x2="88.9" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="D" pin="+IN"/>
-<wire x1="91.44" y1="-53.34" x2="88.9" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="D" pin="-IN"/>
+<wire x1="88.9" y1="-53.34" x2="91.44" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="88.9" y="-53.34"/>
 </segment>
 </net>
