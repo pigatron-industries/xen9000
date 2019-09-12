@@ -1011,6 +1011,25 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND4" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
+<part name="R8" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="100k"/>
+<part name="R9" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="100k"/>
+<part name="R10" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="100k"/>
+<part name="C8" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="47pF"/>
+<part name="SUPPLY9" library="supply" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="C11" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="0.1uF"/>
+<part name="C12" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="0.1uF"/>
+<part name="MIN1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="MIN2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="C13" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="2uF"/>
+<part name="MOUT" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1024,7 +1043,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <text x="78.74" y="5.08" size="1.778" layer="95">9V for effect</text>
 </plain>
 <instances>
-<instance part="IC1" gate="A" x="139.7" y="-20.32"/>
+<instance part="IC1" gate="A" x="99.06" y="-124.46"/>
 <instance part="IC1" gate="P" x="99.06" y="-60.96"/>
 <instance part="IC1" gate="B" x="99.06" y="-60.96"/>
 <instance part="C1" gate="G$1" x="99.06" y="-83.82" rot="R90"/>
@@ -1049,8 +1068,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="C4" gate="G$1" x="71.12" y="-91.44" rot="R270"/>
 <instance part="SUPPLY4" gate="GND" x="63.5" y="-96.52"/>
 <instance part="R3" gate="G$1" x="116.84" y="-60.96"/>
-<instance part="SUPPLY5" gate="+12V" x="99.06" y="-50.8"/>
-<instance part="SUPPLY6" gate="G$1" x="99.06" y="-71.12"/>
+<instance part="SUPPLY5" gate="+12V" x="99.06" y="-48.26"/>
+<instance part="SUPPLY6" gate="G$1" x="99.06" y="-73.66"/>
 <instance part="C5" gate="G$1" x="78.74" y="-68.58" rot="R180"/>
 <instance part="R4" gate="G$1" x="66.04" y="-66.04" rot="R90"/>
 <instance part="C6" gate="G$1" x="58.42" y="-58.42" rot="R270"/>
@@ -1067,6 +1086,17 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="E_OUT" gate="HEADER" x="38.1" y="-60.96"/>
 <instance part="+9V" gate="HEADER" x="73.66" y="2.54" rot="R180"/>
 <instance part="GND4" gate="HEADER" x="73.66" y="-15.24" rot="R180"/>
+<instance part="R8" gate="G$1" x="78.74" y="-127"/>
+<instance part="R9" gate="G$1" x="78.74" y="-134.62"/>
+<instance part="R10" gate="G$1" x="99.06" y="-134.62"/>
+<instance part="C8" gate="G$1" x="101.6" y="-147.32" rot="R90"/>
+<instance part="SUPPLY9" gate="GND" x="88.9" y="-124.46"/>
+<instance part="C11" gate="G$1" x="68.58" y="-127" rot="R90"/>
+<instance part="C12" gate="G$1" x="68.58" y="-134.62" rot="R90"/>
+<instance part="MIN1" gate="HEADER" x="63.5" y="-127"/>
+<instance part="MIN2" gate="HEADER" x="63.5" y="-134.62"/>
+<instance part="C13" gate="G$1" x="119.38" y="-124.46" rot="R90"/>
+<instance part="MOUT" gate="HEADER" x="127" y="-124.46" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1134,9 +1164,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="GND4" gate="HEADER" pin="3"/>
 <wire x1="60.96" y1="-15.24" x2="71.12" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="60.96" y="-15.24"/>
-</segment>
-<segment>
-<wire x1="-22.86" y1="-5.08" x2="-22.86" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -1163,6 +1191,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="48.26" y1="-76.2" x2="48.26" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="48.26" y="-73.66"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="A" pin="+IN"/>
+<pinref part="SUPPLY9" gate="GND" pin="PE"/>
+<wire x1="88.9" y1="-121.92" x2="91.44" y2="-121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -1184,10 +1217,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="IC2" gate="A1" pin="VI"/>
 <wire x1="22.86" y1="2.54" x2="33.02" y2="2.54" width="0.1524" layer="91"/>
 <junction x="22.86" y="2.54"/>
+<junction x="-2.54" y="0"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
 <pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
+<wire x1="99.06" y1="-50.8" x2="99.06" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -1207,10 +1242,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="-30.48" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="7.62" y="-30.48"/>
+<junction x="-2.54" y="-27.94"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="SUPPLY6" gate="G$1" pin="-12V"/>
+<wire x1="99.06" y1="-71.12" x2="99.06" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1261,6 +1298,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="12.7" y1="-58.42" x2="12.7" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-58.42" x2="20.32" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="E_IN" gate="HEADER" pin="3"/>
+<junction x="12.7" y="-58.42"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1279,6 +1317,70 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="60.96" y="2.54"/>
 <wire x1="60.96" y1="2.54" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="+9V" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="-134.62" x2="83.82" y2="-127" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="83.82" y1="-127" x2="91.44" y2="-127" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-134.62" x2="91.44" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-134.62" x2="91.44" y2="-127" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-147.32" x2="91.44" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-147.32" x2="91.44" y2="-134.62" width="0.1524" layer="91"/>
+<junction x="91.44" y="-134.62"/>
+<junction x="91.44" y="-127"/>
+<junction x="83.82" y="-127"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="-134.62" x2="114.3" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="114.3" y1="-134.62" x2="114.3" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-124.46" x2="106.68" y2="-124.46" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="-147.32" x2="114.3" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-147.32" x2="114.3" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="-124.46" x2="114.3" y2="-124.46" width="0.1524" layer="91"/>
+<junction x="114.3" y="-134.62"/>
+<junction x="114.3" y="-124.46"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="MIN1" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="MIN2" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="MOUT" gate="HEADER" pin="3"/>
 </segment>
 </net>
 </nets>
