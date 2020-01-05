@@ -1181,10 +1181,15 @@ type 0207, grid 7.5 mm</description>
 <part name="STN3" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
+<part name="STN2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="161.29" y="-22.098" size="1.778" layer="95">Connect to STNCV</text>
+<text x="208.28" y="-12.7" size="1.778" layer="95">From STNCV input jack normalled to +V</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="GND" x="17.78" y="50.8"/>
@@ -1212,10 +1217,10 @@ type 0207, grid 7.5 mm</description>
 <instance part="R2" gate="G$1" x="55.88" y="-81.28"/>
 <instance part="SUPPLY11" gate="GND" x="55.88" y="-91.44"/>
 <instance part="DCYCV" gate="HEADER" x="83.82" y="-60.96"/>
-<instance part="R11" gate="G$1" x="165.1" y="-17.78" rot="R180"/>
-<instance part="SUPPLY17" gate="GND" x="165.1" y="-27.94"/>
+<instance part="R11" gate="G$1" x="187.96" y="-17.78" rot="R180"/>
+<instance part="SUPPLY17" gate="GND" x="187.96" y="-27.94"/>
 <instance part="STNCV" gate="HEADER" x="152.4" y="-15.24" rot="R270"/>
-<instance part="SUPPLY18" gate="+12V" x="165.1" y="5.08"/>
+<instance part="SUPPLY18" gate="+12V" x="187.96" y="5.08"/>
 <instance part="GATE" gate="HEADER" x="48.26" y="-7.62"/>
 <instance part="GATEN" gate="HEADER" x="48.26" y="-5.08"/>
 <instance part="R12" gate="G$1" x="50.8" y="2.54" rot="R90"/>
@@ -1284,9 +1289,10 @@ type 0207, grid 7.5 mm</description>
 <instance part="ATK1" gate="HEADER" x="53.34" y="-180.34"/>
 <instance part="ATK2" gate="HEADER" x="71.12" y="-190.5" rot="R90"/>
 <instance part="ATK3" gate="HEADER" x="53.34" y="-193.04"/>
-<instance part="R32" gate="G$1" x="165.1" y="-5.08" rot="R90"/>
-<instance part="STN1" gate="HEADER" x="167.64" y="-22.86" rot="R180"/>
-<instance part="STN3" gate="HEADER" x="167.64" y="-12.7" rot="R180"/>
+<instance part="R32" gate="G$1" x="187.96" y="-5.08" rot="R90"/>
+<instance part="STN1" gate="HEADER" x="190.5" y="-22.86" rot="R180"/>
+<instance part="STN3" gate="HEADER" x="190.5" y="-12.7" rot="R180"/>
+<instance part="STN2" gate="HEADER" x="180.34" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -1384,9 +1390,9 @@ type 0207, grid 7.5 mm</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="A"/>
 <pinref part="SUPPLY17" gate="GND" pin="PE"/>
-<wire x1="165.1" y1="-25.4" x2="165.1" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-25.4" x2="187.96" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="STN1" gate="HEADER" pin="3"/>
-<junction x="165.1" y="-22.86"/>
+<junction x="187.96" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="C" pin="+IN"/>
@@ -1447,7 +1453,7 @@ type 0207, grid 7.5 mm</description>
 <segment>
 <pinref part="SUPPLY18" gate="+12V" pin="+12V"/>
 <pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="2.54" x2="165.1" y2="0" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="2.54" x2="187.96" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -1815,9 +1821,15 @@ type 0207, grid 7.5 mm</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="E"/>
 <pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="-10.16" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-10.16" x2="187.96" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="STN3" gate="HEADER" pin="3"/>
-<junction x="165.1" y="-12.7"/>
+<junction x="187.96" y="-12.7"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="S"/>
+<pinref part="STN2" gate="HEADER" pin="3"/>
 </segment>
 </net>
 </nets>

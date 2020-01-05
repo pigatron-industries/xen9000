@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="8.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -740,7 +740,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="C3" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="1uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="+5V" library="connectors" deviceset="HEADER/MALE/01" device="">
+<part name="5V" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
 <part name="TNSY_GND" library="connectors" deviceset="HEADER/MALE/01" device="">
@@ -776,13 +776,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="TNSY_9" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="CS" library="connectors" deviceset="HEADER/MALE/01" device="">
+<part name="TNSY_CS" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="MOSI" library="connectors" deviceset="HEADER/MALE/01" device="">
+<part name="TNSY_MOSI" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="MISO" library="connectors" deviceset="HEADER/MALE/01" device="">
+<part name="TNSY_MISO" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
 <part name="TNSY_VIN" library="connectors" deviceset="HEADER/MALE/01" device="">
@@ -824,10 +824,139 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="TNSY_14" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
+<part name="TNSY_SCK" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_CS" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_SCK" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_SDO" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_SDI" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_3.3V" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_GND" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_GND2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_5V" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC6" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC5" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC4" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_NC3" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_INT" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_CNV" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="AVDDIO" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="AVSSIO" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="SUPPLY4" library="supply" deviceset="+12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="SUPPLY5" library="supply" deviceset="-12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="0" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="3" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="4" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="5" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="6" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="7" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="8" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="9" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="MOSI" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="MISO" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
 <part name="SCK" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="ON/OFF" library="connectors" deviceset="HEADER/MALE/01" device="">
+<part name="INT" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="CNV" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="16" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="17" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="18" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="19" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="20" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="21" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="22" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="23" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="3.3V" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
 </parts>
@@ -880,103 +1009,232 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="29.083" y="48.7426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.083" y="43.6626" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="A1" x="68.58" y="71.12" smashed="yes">
-<attribute name="NAME" x="60.96" y="76.835" size="1.778" layer="95"/>
-<attribute name="VALUE" x="60.96" y="74.295" size="1.778" layer="96"/>
+<instance part="IC1" gate="A1" x="55.88" y="71.12" smashed="yes">
+<attribute name="NAME" x="48.26" y="76.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.26" y="74.295" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="86.36" y="60.96" smashed="yes">
-<attribute name="NAME" x="87.503" y="61.4426" size="1.778" layer="95"/>
-<attribute name="VALUE" x="87.503" y="56.3626" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="81.28" y="60.96" smashed="yes">
+<attribute name="NAME" x="82.423" y="61.4426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.423" y="56.3626" size="1.778" layer="96"/>
 </instance>
-<instance part="+5V" gate="HEADER" x="104.14" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="117.856" y="72.136" size="1.778" layer="96" rot="R180"/>
+<instance part="5V" gate="HEADER" x="203.2" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="216.916" y="72.136" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_GND" gate="HEADER" x="81.28" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="21.336" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_GND" gate="HEADER" x="86.36" y="17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="18.796" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_0" gate="HEADER" x="81.28" y="17.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="18.796" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_0" gate="HEADER" x="86.36" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="16.256" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_1" gate="HEADER" x="81.28" y="15.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="16.256" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_1" gate="HEADER" x="86.36" y="12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="13.716" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_2" gate="HEADER" x="81.28" y="12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="13.716" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_2" gate="HEADER" x="86.36" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="11.176" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_3" gate="HEADER" x="81.28" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="11.176" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_3" gate="HEADER" x="86.36" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="8.636" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_4" gate="HEADER" x="81.28" y="7.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="8.636" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_4" gate="HEADER" x="86.36" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="6.096" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_5" gate="HEADER" x="81.28" y="5.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="6.096" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_5" gate="HEADER" x="86.36" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="3.556" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_6" gate="HEADER" x="81.28" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="3.556" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_6" gate="HEADER" x="86.36" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="1.016" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_7" gate="HEADER" x="81.28" y="0" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="1.016" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_7" gate="HEADER" x="86.36" y="-2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-1.524" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_8" gate="HEADER" x="81.28" y="-2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="-1.524" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_8" gate="HEADER" x="86.36" y="-5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-4.064" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_9" gate="HEADER" x="81.28" y="-5.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="-4.064" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_9" gate="HEADER" x="86.36" y="-7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-6.604" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CS" gate="HEADER" x="81.28" y="-7.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="-6.604" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_CS" gate="HEADER" x="86.36" y="-10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-9.144" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="MOSI" gate="HEADER" x="81.28" y="-10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="-9.144" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_MOSI" gate="HEADER" x="86.36" y="-12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-11.684" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="MISO" gate="HEADER" x="81.28" y="-12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="-11.684" size="1.778" layer="96" rot="R180"/>
+<instance part="TNSY_MISO" gate="HEADER" x="86.36" y="-15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.076" y="-14.224" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TNSY_VIN" gate="HEADER" x="116.84" y="20.32" smashed="yes">
-<attribute name="NAME" x="103.124" y="19.304" size="1.778" layer="96"/>
+<instance part="TNSY_VIN" gate="HEADER" x="121.92" y="17.78" smashed="yes">
+<attribute name="NAME" x="108.204" y="16.764" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_GND2" gate="HEADER" x="116.84" y="17.78" smashed="yes">
-<attribute name="NAME" x="103.124" y="16.764" size="1.778" layer="96"/>
+<instance part="TNSY_GND2" gate="HEADER" x="121.92" y="15.24" smashed="yes">
+<attribute name="NAME" x="108.204" y="14.224" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_3.3V" gate="HEADER" x="116.84" y="15.24" smashed="yes">
-<attribute name="NAME" x="103.124" y="14.224" size="1.778" layer="96"/>
+<instance part="TNSY_3.3V" gate="HEADER" x="121.92" y="12.7" smashed="yes">
+<attribute name="NAME" x="108.204" y="11.684" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_23" gate="HEADER" x="116.84" y="12.7" smashed="yes">
-<attribute name="NAME" x="103.124" y="11.684" size="1.778" layer="96"/>
+<instance part="TNSY_23" gate="HEADER" x="121.92" y="10.16" smashed="yes">
+<attribute name="NAME" x="108.204" y="9.144" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_22" gate="HEADER" x="116.84" y="10.16" smashed="yes">
-<attribute name="NAME" x="103.124" y="9.144" size="1.778" layer="96"/>
+<instance part="TNSY_22" gate="HEADER" x="121.92" y="7.62" smashed="yes">
+<attribute name="NAME" x="108.204" y="6.604" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_21" gate="HEADER" x="116.84" y="7.62" smashed="yes">
-<attribute name="NAME" x="103.124" y="6.604" size="1.778" layer="96"/>
+<instance part="TNSY_21" gate="HEADER" x="121.92" y="5.08" smashed="yes">
+<attribute name="NAME" x="108.204" y="4.064" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_20" gate="HEADER" x="116.84" y="5.08" smashed="yes">
-<attribute name="NAME" x="103.124" y="4.064" size="1.778" layer="96"/>
+<instance part="TNSY_20" gate="HEADER" x="121.92" y="2.54" smashed="yes">
+<attribute name="NAME" x="108.204" y="1.524" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_19" gate="HEADER" x="116.84" y="2.54" smashed="yes">
-<attribute name="NAME" x="103.124" y="1.524" size="1.778" layer="96"/>
+<instance part="TNSY_19" gate="HEADER" x="121.92" y="0" smashed="yes">
+<attribute name="NAME" x="108.204" y="-1.016" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_18" gate="HEADER" x="116.84" y="0" smashed="yes">
-<attribute name="NAME" x="103.124" y="-1.016" size="1.778" layer="96"/>
+<instance part="TNSY_18" gate="HEADER" x="121.92" y="-2.54" smashed="yes">
+<attribute name="NAME" x="108.204" y="-3.556" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_17" gate="HEADER" x="116.84" y="-2.54" smashed="yes">
-<attribute name="NAME" x="103.124" y="-3.556" size="1.778" layer="96"/>
+<instance part="TNSY_17" gate="HEADER" x="121.92" y="-5.08" smashed="yes">
+<attribute name="NAME" x="108.204" y="-6.096" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_16" gate="HEADER" x="116.84" y="-5.08" smashed="yes">
-<attribute name="NAME" x="103.124" y="-6.096" size="1.778" layer="96"/>
+<instance part="TNSY_16" gate="HEADER" x="121.92" y="-7.62" smashed="yes">
+<attribute name="NAME" x="108.204" y="-8.636" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_15" gate="HEADER" x="116.84" y="-7.62" smashed="yes">
-<attribute name="NAME" x="103.124" y="-8.636" size="1.778" layer="96"/>
+<instance part="TNSY_15" gate="HEADER" x="121.92" y="-10.16" smashed="yes">
+<attribute name="NAME" x="108.204" y="-11.176" size="1.778" layer="96"/>
 </instance>
-<instance part="TNSY_14" gate="HEADER" x="116.84" y="-10.16" smashed="yes">
-<attribute name="NAME" x="103.124" y="-11.176" size="1.778" layer="96"/>
+<instance part="TNSY_14" gate="HEADER" x="121.92" y="-12.7" smashed="yes">
+<attribute name="NAME" x="108.204" y="-13.716" size="1.778" layer="96"/>
 </instance>
-<instance part="SCK" gate="HEADER" x="116.84" y="-12.7" smashed="yes">
-<attribute name="NAME" x="103.124" y="-13.716" size="1.778" layer="96"/>
+<instance part="TNSY_SCK" gate="HEADER" x="121.92" y="-15.24" smashed="yes">
+<attribute name="NAME" x="108.204" y="-16.256" size="1.778" layer="96"/>
 </instance>
-<instance part="ON/OFF" gate="HEADER" x="101.6" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="100.584" y="-6.604" size="1.778" layer="96" rot="R270"/>
+<instance part="PIXI_NC1" gate="HEADER" x="162.56" y="17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="18.796" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_NC2" gate="HEADER" x="162.56" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="16.256" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_CS" gate="HEADER" x="162.56" y="12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="13.716" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_SCK" gate="HEADER" x="162.56" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="11.176" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_SDO" gate="HEADER" x="162.56" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="8.636" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_SDI" gate="HEADER" x="162.56" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="6.096" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_3.3V" gate="HEADER" x="162.56" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="3.556" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_GND" gate="HEADER" x="162.56" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="1.016" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_GND2" gate="HEADER" x="193.04" y="0" smashed="yes">
+<attribute name="NAME" x="179.324" y="-1.016" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_5V" gate="HEADER" x="193.04" y="2.54" smashed="yes">
+<attribute name="NAME" x="179.324" y="1.524" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_NC6" gate="HEADER" x="193.04" y="5.08" smashed="yes">
+<attribute name="NAME" x="179.324" y="4.064" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_NC5" gate="HEADER" x="193.04" y="7.62" smashed="yes">
+<attribute name="NAME" x="179.324" y="6.604" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_NC4" gate="HEADER" x="193.04" y="10.16" smashed="yes">
+<attribute name="NAME" x="179.324" y="9.144" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_NC3" gate="HEADER" x="193.04" y="12.7" smashed="yes">
+<attribute name="NAME" x="179.324" y="11.684" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_INT" gate="HEADER" x="193.04" y="15.24" smashed="yes">
+<attribute name="NAME" x="179.324" y="14.224" size="1.778" layer="96"/>
+</instance>
+<instance part="PIXI_CNV" gate="HEADER" x="193.04" y="17.78" smashed="yes">
+<attribute name="NAME" x="179.324" y="16.764" size="1.778" layer="96"/>
+</instance>
+<instance part="AVDDIO" gate="HEADER" x="175.26" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="176.276" y="21.844" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="AVSSIO" gate="HEADER" x="172.72" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="173.736" y="21.844" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY4" gate="+12V" x="175.26" y="40.64" smashed="yes">
+<attribute name="VALUE" x="172.72" y="43.815" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="165.1" y="33.02" smashed="yes">
+<attribute name="VALUE" x="161.925" y="28.321" size="1.778" layer="96"/>
+</instance>
+<instance part="0" gate="HEADER" x="81.28" y="15.24" smashed="yes">
+<attribute name="NAME" x="67.564" y="14.224" size="1.778" layer="96"/>
+</instance>
+<instance part="1" gate="HEADER" x="81.28" y="12.7" smashed="yes">
+<attribute name="NAME" x="67.564" y="11.684" size="1.778" layer="96"/>
+</instance>
+<instance part="2" gate="HEADER" x="81.28" y="10.16" smashed="yes">
+<attribute name="NAME" x="67.564" y="9.144" size="1.778" layer="96"/>
+</instance>
+<instance part="3" gate="HEADER" x="81.28" y="7.62" smashed="yes">
+<attribute name="NAME" x="67.564" y="6.604" size="1.778" layer="96"/>
+</instance>
+<instance part="4" gate="HEADER" x="81.28" y="5.08" smashed="yes">
+<attribute name="NAME" x="67.564" y="4.064" size="1.778" layer="96"/>
+</instance>
+<instance part="5" gate="HEADER" x="81.28" y="2.54" smashed="yes">
+<attribute name="NAME" x="67.564" y="1.524" size="1.778" layer="96"/>
+</instance>
+<instance part="6" gate="HEADER" x="81.28" y="0" smashed="yes">
+<attribute name="NAME" x="67.564" y="-1.016" size="1.778" layer="96"/>
+</instance>
+<instance part="7" gate="HEADER" x="81.28" y="-2.54" smashed="yes">
+<attribute name="NAME" x="67.564" y="-3.556" size="1.778" layer="96"/>
+</instance>
+<instance part="8" gate="HEADER" x="81.28" y="-5.08" smashed="yes">
+<attribute name="NAME" x="67.564" y="-6.096" size="1.778" layer="96"/>
+</instance>
+<instance part="9" gate="HEADER" x="81.28" y="-7.62" smashed="yes">
+<attribute name="NAME" x="67.564" y="-8.636" size="1.778" layer="96"/>
+</instance>
+<instance part="MOSI" gate="HEADER" x="58.42" y="-12.7" smashed="yes">
+<attribute name="NAME" x="44.704" y="-13.716" size="1.778" layer="96"/>
+</instance>
+<instance part="MISO" gate="HEADER" x="58.42" y="-15.24" smashed="yes">
+<attribute name="NAME" x="44.704" y="-16.256" size="1.778" layer="96"/>
+</instance>
+<instance part="SCK" gate="HEADER" x="208.28" y="-15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="221.996" y="-14.224" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="INT" gate="HEADER" x="208.28" y="-12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="221.996" y="-11.684" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="CNV" gate="HEADER" x="208.28" y="-10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="221.996" y="-9.144" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="16" gate="HEADER" x="127" y="-7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="-6.604" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="17" gate="HEADER" x="127" y="-5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="-4.064" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="18" gate="HEADER" x="127" y="-2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="-1.524" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="19" gate="HEADER" x="127" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="1.016" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="20" gate="HEADER" x="127" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="3.556" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="21" gate="HEADER" x="127" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="6.096" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="22" gate="HEADER" x="127" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="8.636" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="23" gate="HEADER" x="127" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.716" y="11.176" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="3.3V" gate="HEADER" x="203.2" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="216.916" y="51.816" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -997,13 +1255,28 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="17.78" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 <junction x="17.78" y="53.34"/>
 <junction x="27.94" y="53.34"/>
-<wire x1="27.94" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A1" pin="GND"/>
-<wire x1="68.58" y1="53.34" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="53.34" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<junction x="68.58" y="53.34"/>
+<wire x1="55.88" y1="53.34" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="53.34" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<junction x="55.88" y="53.34"/>
 <pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="TNSY_GND" gate="HEADER" pin="3"/>
+<wire x1="83.82" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<junction x="81.28" y="53.34"/>
+<pinref part="PIXI_GND" gate="HEADER" pin="3"/>
+<wire x1="160.02" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="0" x2="144.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="0" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="0" x2="157.48" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-2.54" x2="198.12" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-2.54" x2="198.12" y2="0" width="0.1524" layer="91"/>
+<pinref part="PIXI_GND2" gate="HEADER" pin="3"/>
+<wire x1="198.12" y1="0" x2="195.58" y2="0" width="0.1524" layer="91"/>
+<junction x="157.48" y="0"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1020,8 +1293,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="17.78" y1="66.04" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
-<wire x1="27.94" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 <junction x="27.94" y="71.12"/>
+</segment>
+<segment>
+<pinref part="AVDDIO" gate="HEADER" pin="3"/>
+<pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -1038,16 +1315,228 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="17.78" y="38.1"/>
 <pinref part="SUPPLY2" gate="G$1" pin="-12V"/>
 </segment>
+<segment>
+<pinref part="AVSSIO" gate="HEADER" pin="3"/>
+<wire x1="172.72" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="-12V"/>
+<wire x1="165.1" y1="38.1" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
-<wire x1="86.36" y1="63.5" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="63.5" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
-<pinref part="+5V" gate="HEADER" pin="3"/>
-<wire x1="101.6" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<junction x="86.36" y="71.12"/>
+<pinref part="5V" gate="HEADER" pin="3"/>
+<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<junction x="81.28" y="71.12"/>
+<pinref part="TNSY_VIN" gate="HEADER" pin="3"/>
+<wire x1="198.12" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="17.78" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<junction x="127" y="71.12"/>
+<pinref part="PIXI_5V" gate="HEADER" pin="3"/>
+<wire x1="195.58" y1="2.54" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="2.54" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<junction x="198.12" y="71.12"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="TNSY_3.3V" gate="HEADER" pin="3"/>
+<wire x1="124.46" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="12.7" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="PIXI_3.3V" gate="HEADER" pin="3"/>
+<wire x1="142.24" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="3.3V" gate="HEADER" pin="3"/>
+<wire x1="200.66" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="50.8" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
+<junction x="142.24" y="12.7"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="TNSY_MOSI" gate="HEADER" pin="3"/>
+<wire x1="83.82" y1="-12.7" x2="78.74" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-12.7" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-33.02" x2="154.94" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-33.02" x2="154.94" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="PIXI_SDI" gate="HEADER" pin="3"/>
+<wire x1="154.94" y1="5.08" x2="160.02" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="MOSI" gate="HEADER" pin="3"/>
+<wire x1="60.96" y1="-12.7" x2="78.74" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="78.74" y="-12.7"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="TNSY_MISO" gate="HEADER" pin="3"/>
+<wire x1="83.82" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-15.24" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-30.48" x2="152.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="PIXI_SDO" gate="HEADER" pin="3"/>
+<wire x1="152.4" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="MISO" gate="HEADER" pin="3"/>
+<wire x1="60.96" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="81.28" y="-15.24"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="TNSY_SCK" gate="HEADER" pin="3"/>
+<wire x1="124.46" y1="-15.24" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-15.24" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="PIXI_SCK" gate="HEADER" pin="3"/>
+<wire x1="149.86" y1="10.16" x2="160.02" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SCK" gate="HEADER" pin="3"/>
+<wire x1="205.74" y1="-15.24" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="149.86" y="-15.24"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="TNSY_CS" gate="HEADER" pin="3"/>
+<wire x1="83.82" y1="-10.16" x2="76.2" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-10.16" x2="76.2" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-27.94" x2="147.32" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-27.94" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="PIXI_CS" gate="HEADER" pin="3"/>
+<wire x1="147.32" y1="12.7" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="TNSY_14" gate="HEADER" pin="3"/>
+<wire x1="124.46" y1="-12.7" x2="203.2" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-12.7" x2="203.2" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="PIXI_CNV" gate="HEADER" pin="3"/>
+<wire x1="203.2" y1="17.78" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="INT" gate="HEADER" pin="3"/>
+<wire x1="205.74" y1="-12.7" x2="203.2" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="203.2" y="-12.7"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="PIXI_INT" gate="HEADER" pin="3"/>
+<wire x1="195.58" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="15.24" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="TNSY_15" gate="HEADER" pin="3"/>
+<wire x1="200.66" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="CNV" gate="HEADER" pin="3"/>
+<wire x1="205.74" y1="-10.16" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="200.66" y="-10.16"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="TNSY_17" gate="HEADER" pin="3"/>
+<pinref part="17" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="TNSY_16" gate="HEADER" pin="3"/>
+<pinref part="16" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="TNSY_18" gate="HEADER" pin="3"/>
+<pinref part="18" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="TNSY_19" gate="HEADER" pin="3"/>
+<pinref part="19" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="TNSY_20" gate="HEADER" pin="3"/>
+<pinref part="20" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="TNSY_21" gate="HEADER" pin="3"/>
+<pinref part="21" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="TNSY_22" gate="HEADER" pin="3"/>
+<pinref part="22" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="TNSY_23" gate="HEADER" pin="3"/>
+<pinref part="23" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="TNSY_0" gate="HEADER" pin="3"/>
+<pinref part="0" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="TNSY_1" gate="HEADER" pin="3"/>
+<pinref part="1" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="TNSY_2" gate="HEADER" pin="3"/>
+<pinref part="2" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="TNSY_3" gate="HEADER" pin="3"/>
+<pinref part="3" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="TNSY_4" gate="HEADER" pin="3"/>
+<pinref part="4" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="TNSY_5" gate="HEADER" pin="3"/>
+<pinref part="5" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="TNSY_6" gate="HEADER" pin="3"/>
+<pinref part="6" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="TNSY_7" gate="HEADER" pin="3"/>
+<pinref part="7" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="TNSY_8" gate="HEADER" pin="3"/>
+<pinref part="8" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="TNSY_9" gate="HEADER" pin="3"/>
+<pinref part="9" gate="HEADER" pin="3"/>
 </segment>
 </net>
 </nets>

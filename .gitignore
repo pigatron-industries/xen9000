@@ -4,5 +4,7 @@
 # System Files
 .DS_Store
 Thumbs.db
-*.b#*
-*.s#*
+
+# Eagle files
+*.*#*
+*.zip
