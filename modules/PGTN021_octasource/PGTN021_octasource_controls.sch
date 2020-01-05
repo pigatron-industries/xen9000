@@ -674,7 +674,7 @@ type 0207, grid 7.5 mm</description>
 <instance part="SUPPLY14" gate="GND" x="45.72" y="-22.86"/>
 <instance part="LENGTH_CV" gate="HEADER" x="45.72" y="-10.16" rot="R180"/>
 <instance part="GATE_OUT" gate="HEADER" x="-35.56" y="-43.18" rot="R180"/>
-<instance part="TRIG_IN" gate="HEADER" x="2.54" y="-43.18" rot="R180"/>
+<instance part="TRIG_IN" gate="HEADER" x="5.08" y="-43.18" rot="R180"/>
 <instance part="SUPPLY15" gate="GND" x="-35.56" y="-55.88"/>
 <instance part="SUPPLY16" gate="GND" x="5.08" y="-55.88"/>
 <instance part="OUT1" gate="HEADER" x="76.2" y="71.12"/>
@@ -1084,6 +1084,12 @@ type 0207, grid 7.5 mm</description>
 <segment>
 <pinref part="LEDR_8" gate="HEADER" pin="3"/>
 <pinref part="LEDR8" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="TRIGGER_JCK" gate="G$1" pin="2"/>
+<pinref part="TRIG_IN" gate="HEADER" pin="3"/>
 </segment>
 </net>
 </nets>
