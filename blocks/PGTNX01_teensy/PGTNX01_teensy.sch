@@ -684,6 +684,186 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="resistors">
+<packages>
+<package name="RESISTOR/UPRIGHT/2.5">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0207, grid 2.5 mm</description>
+<wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.6096" layer="51"/>
+<wire x1="-0.254" y1="0" x2="0.254" y2="0" width="0.6096" layer="21"/>
+<wire x1="0.381" y1="0" x2="1.27" y2="0" width="0.6096" layer="51"/>
+<circle x="-1.27" y="0" radius="1.27" width="0.1524" layer="21"/>
+<circle x="-1.27" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-0.0508" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.0508" y="-2.2352" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="RESISTOR/7.5">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0207, grid 7.5 mm</description>
+<wire x1="-3.81" y1="0" x2="-3.429" y2="0" width="0.6096" layer="51"/>
+<wire x1="-3.175" y1="0.889" x2="-2.921" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.175" y1="-0.889" x2="-2.921" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.921" y1="-1.143" x2="3.175" y2="-0.889" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.921" y1="1.143" x2="3.175" y2="0.889" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.175" y1="-0.889" x2="-3.175" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="1.143" x2="-2.54" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.016" x2="-2.54" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-2.921" y1="-1.143" x2="-2.54" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-1.016" x2="-2.54" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.016" x2="2.54" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.016" x2="-2.413" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.016" x2="2.54" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.016" x2="-2.413" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.921" y1="1.143" x2="2.54" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.921" y1="-1.143" x2="2.54" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-0.889" x2="3.175" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="3.429" y1="0" x2="3.81" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.54" y="-0.508" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.921" y="1.3462" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.429" y1="-0.3048" x2="-3.175" y2="0.3048" layer="51"/>
+<rectangle x1="3.175" y1="-0.3048" x2="3.429" y2="0.3048" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="R-EU">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RESISTOR/7.5" package="RESISTOR/UPRIGHT/2.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RESISTOR/UPRIGHT/7.5" package="RESISTOR/7.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="transistors">
+<packages>
+<package name="DO35-10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 10.16 mm</description>
+<wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="-0.762" x2="2.286" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="0.8128" shape="square"/>
+<pad name="A" x="5.08" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.159" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.159" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
+<rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+<package name="DO35-7">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 7.62 mm</description>
+<wire x1="3.81" y1="0" x2="2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="0.8128" shape="square"/>
+<pad name="A" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<text x="-1.016" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
+<rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4148" prefix="D" uservalue="yes">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+high speed (Philips)</description>
+<gates>
+<gate name="1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO35-10" package="DO35-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO35-7" package="DO35-7">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -736,8 +916,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="C2" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="10uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="IC1" library="ic_voltage_reg" deviceset="78*" device="L" technology="05"/>
-<part name="C3" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="1uF">
+<part name="C3" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="0.1uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="5V" library="connectors" deviceset="HEADER/MALE/01" device="">
@@ -881,12 +1060,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="AVSSIO" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="SUPPLY4" library="supply" deviceset="+12V" device="">
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
-<part name="SUPPLY5" library="supply" deviceset="-12V" device="">
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
 <part name="0" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
@@ -959,6 +1132,223 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="3.3V" library="connectors" deviceset="HEADER/MALE/01" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
+<part name="IC2" library="ic_voltage_reg" deviceset="78*" device="TV" technology="05"/>
+<part name="PIXI_0" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R1" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_0" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R2" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R3" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_3" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R4" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_3" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_4" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R5" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_4" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_5" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R6" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_5" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_6" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R7" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_6" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_7" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R8" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_7" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_8" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R9" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_8" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_9" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R10" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_9" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_10" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R11" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_10" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_11" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R12" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_11" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_12" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R13" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_12" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_13" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R14" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_13" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_14" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R15" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_14" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_15" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R16" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_15" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_16" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R17" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_16" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_17" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R18" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_17" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_18" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R19" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_18" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="PIXI_19" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R20" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO_19" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="R21" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="R22" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5"/>
+<part name="IO__0" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__1" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__2" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__3" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__4" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__5" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__6" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__7" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__8" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__9" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__10" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__11" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__12" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__13" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__14" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__15" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__16" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__17" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__18" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="IO__19" library="connectors" deviceset="HEADER/MALE/01" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
+<part name="D1" library="transistors" deviceset="1N4148" device="DO35-7"/>
+<part name="SUPPLY4" library="supply" deviceset="+12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="SUPPLY5" library="supply" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="SUPPLY6" library="supply" deviceset="-12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="D2" library="transistors" deviceset="1N4148" device="DO35-7"/>
+<part name="SUPPLY7" library="supply" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1009,13 +1399,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="29.083" y="48.7426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.083" y="43.6626" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="A1" x="55.88" y="71.12" smashed="yes">
-<attribute name="NAME" x="48.26" y="76.835" size="1.778" layer="95"/>
-<attribute name="VALUE" x="48.26" y="74.295" size="1.778" layer="96"/>
-</instance>
-<instance part="C3" gate="G$1" x="81.28" y="60.96" smashed="yes">
-<attribute name="NAME" x="82.423" y="61.4426" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.423" y="56.3626" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="73.66" y="60.96" smashed="yes">
+<attribute name="NAME" x="74.803" y="61.4426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.803" y="56.3626" size="1.778" layer="96"/>
 </instance>
 <instance part="5V" gate="HEADER" x="203.2" y="71.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="216.916" y="72.136" size="1.778" layer="96" rot="R180"/>
@@ -1152,17 +1538,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="PIXI_CNV" gate="HEADER" x="193.04" y="17.78" smashed="yes">
 <attribute name="NAME" x="179.324" y="16.764" size="1.778" layer="96"/>
 </instance>
-<instance part="AVDDIO" gate="HEADER" x="175.26" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="176.276" y="21.844" size="1.778" layer="96" rot="R90"/>
+<instance part="AVDDIO" gate="HEADER" x="91.44" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="105.156" y="105.156" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="AVSSIO" gate="HEADER" x="172.72" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="173.736" y="21.844" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY4" gate="+12V" x="175.26" y="40.64" smashed="yes">
-<attribute name="VALUE" x="172.72" y="43.815" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY5" gate="G$1" x="165.1" y="33.02" smashed="yes">
-<attribute name="VALUE" x="161.925" y="28.321" size="1.778" layer="96"/>
+<instance part="AVSSIO" gate="HEADER" x="40.64" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.356" y="105.156" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="0" gate="HEADER" x="81.28" y="15.24" smashed="yes">
 <attribute name="NAME" x="67.564" y="14.224" size="1.778" layer="96"/>
@@ -1236,6 +1616,223 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="3.3V" gate="HEADER" x="203.2" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="216.916" y="51.816" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="IC2" gate="A1" x="55.88" y="71.12"/>
+<instance part="PIXI_0" gate="HEADER" x="48.26" y="-60.96" smashed="yes">
+<attribute name="NAME" x="34.544" y="-61.976" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="60.96" y="-60.96"/>
+<instance part="IO_0" gate="HEADER" x="71.12" y="-60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-59.944" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_1" gate="HEADER" x="48.26" y="-78.74" smashed="yes">
+<attribute name="NAME" x="34.544" y="-79.756" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="60.96" y="-78.74"/>
+<instance part="IO_1" gate="HEADER" x="71.12" y="-78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-77.724" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_2" gate="HEADER" x="48.26" y="-96.52" smashed="yes">
+<attribute name="NAME" x="34.544" y="-97.536" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="60.96" y="-96.52"/>
+<instance part="IO_2" gate="HEADER" x="71.12" y="-96.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-95.504" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_3" gate="HEADER" x="48.26" y="-114.3" smashed="yes">
+<attribute name="NAME" x="34.544" y="-115.316" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="60.96" y="-114.3"/>
+<instance part="IO_3" gate="HEADER" x="71.12" y="-114.3" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-113.284" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_4" gate="HEADER" x="48.26" y="-132.08" smashed="yes">
+<attribute name="NAME" x="34.544" y="-133.096" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="60.96" y="-132.08"/>
+<instance part="IO_4" gate="HEADER" x="71.12" y="-132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-131.064" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_5" gate="HEADER" x="48.26" y="-152.4" smashed="yes">
+<attribute name="NAME" x="34.544" y="-153.416" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="60.96" y="-152.4"/>
+<instance part="IO_5" gate="HEADER" x="71.12" y="-152.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-151.384" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_6" gate="HEADER" x="48.26" y="-170.18" smashed="yes">
+<attribute name="NAME" x="34.544" y="-171.196" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="60.96" y="-170.18"/>
+<instance part="IO_6" gate="HEADER" x="71.12" y="-170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-169.164" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_7" gate="HEADER" x="48.26" y="-187.96" smashed="yes">
+<attribute name="NAME" x="34.544" y="-188.976" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="60.96" y="-187.96"/>
+<instance part="IO_7" gate="HEADER" x="71.12" y="-187.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-186.944" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_8" gate="HEADER" x="48.26" y="-205.74" smashed="yes">
+<attribute name="NAME" x="34.544" y="-206.756" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="60.96" y="-205.74"/>
+<instance part="IO_8" gate="HEADER" x="71.12" y="-205.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-204.724" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_9" gate="HEADER" x="48.26" y="-223.52" smashed="yes">
+<attribute name="NAME" x="34.544" y="-224.536" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="60.96" y="-223.52"/>
+<instance part="IO_9" gate="HEADER" x="71.12" y="-223.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-222.504" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_10" gate="HEADER" x="142.24" y="-60.96" smashed="yes">
+<attribute name="NAME" x="128.524" y="-61.976" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="154.94" y="-60.96"/>
+<instance part="IO_10" gate="HEADER" x="165.1" y="-60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-59.944" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_11" gate="HEADER" x="142.24" y="-78.74" smashed="yes">
+<attribute name="NAME" x="128.524" y="-79.756" size="1.778" layer="96"/>
+</instance>
+<instance part="R12" gate="G$1" x="154.94" y="-78.74"/>
+<instance part="IO_11" gate="HEADER" x="165.1" y="-78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-77.724" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_12" gate="HEADER" x="142.24" y="-96.52" smashed="yes">
+<attribute name="NAME" x="128.524" y="-97.536" size="1.778" layer="96"/>
+</instance>
+<instance part="R13" gate="G$1" x="154.94" y="-96.52"/>
+<instance part="IO_12" gate="HEADER" x="165.1" y="-96.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-95.504" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_13" gate="HEADER" x="142.24" y="-114.3" smashed="yes">
+<attribute name="NAME" x="128.524" y="-115.316" size="1.778" layer="96"/>
+</instance>
+<instance part="R14" gate="G$1" x="154.94" y="-114.3"/>
+<instance part="IO_13" gate="HEADER" x="165.1" y="-114.3" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-113.284" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_14" gate="HEADER" x="142.24" y="-132.08" smashed="yes">
+<attribute name="NAME" x="128.524" y="-133.096" size="1.778" layer="96"/>
+</instance>
+<instance part="R15" gate="G$1" x="154.94" y="-132.08"/>
+<instance part="IO_14" gate="HEADER" x="165.1" y="-132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-131.064" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_15" gate="HEADER" x="142.24" y="-152.4" smashed="yes">
+<attribute name="NAME" x="128.524" y="-153.416" size="1.778" layer="96"/>
+</instance>
+<instance part="R16" gate="G$1" x="154.94" y="-152.4"/>
+<instance part="IO_15" gate="HEADER" x="165.1" y="-152.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-151.384" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_16" gate="HEADER" x="142.24" y="-170.18" smashed="yes">
+<attribute name="NAME" x="128.524" y="-171.196" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="154.94" y="-170.18"/>
+<instance part="IO_16" gate="HEADER" x="165.1" y="-170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-169.164" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_17" gate="HEADER" x="142.24" y="-187.96" smashed="yes">
+<attribute name="NAME" x="128.524" y="-188.976" size="1.778" layer="96"/>
+</instance>
+<instance part="R18" gate="G$1" x="154.94" y="-187.96"/>
+<instance part="IO_17" gate="HEADER" x="165.1" y="-187.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-186.944" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_18" gate="HEADER" x="142.24" y="-205.74" smashed="yes">
+<attribute name="NAME" x="128.524" y="-206.756" size="1.778" layer="96"/>
+</instance>
+<instance part="R19" gate="G$1" x="154.94" y="-205.74"/>
+<instance part="IO_18" gate="HEADER" x="165.1" y="-205.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-204.724" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PIXI_19" gate="HEADER" x="142.24" y="-223.52" smashed="yes">
+<attribute name="NAME" x="128.524" y="-224.536" size="1.778" layer="96"/>
+</instance>
+<instance part="R20" gate="G$1" x="154.94" y="-223.52"/>
+<instance part="IO_19" gate="HEADER" x="165.1" y="-223.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-222.504" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R21" gate="G$1" x="78.74" y="104.14" rot="R180"/>
+<instance part="R22" gate="G$1" x="27.94" y="104.14" rot="R180"/>
+<instance part="IO__0" gate="HEADER" x="71.12" y="-63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-62.484" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__1" gate="HEADER" x="71.12" y="-81.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-80.264" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__2" gate="HEADER" x="71.12" y="-99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-98.044" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__3" gate="HEADER" x="71.12" y="-116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-115.824" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__4" gate="HEADER" x="71.12" y="-134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-133.604" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__5" gate="HEADER" x="71.12" y="-154.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-153.924" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__6" gate="HEADER" x="71.12" y="-172.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-171.704" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__7" gate="HEADER" x="71.12" y="-190.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-189.484" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__8" gate="HEADER" x="71.12" y="-208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-207.264" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__9" gate="HEADER" x="71.12" y="-226.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="84.836" y="-225.044" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__10" gate="HEADER" x="165.1" y="-63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-62.484" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__11" gate="HEADER" x="165.1" y="-81.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-80.264" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__12" gate="HEADER" x="165.1" y="-99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-98.044" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__13" gate="HEADER" x="165.1" y="-116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-115.824" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__14" gate="HEADER" x="165.1" y="-134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-133.604" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__15" gate="HEADER" x="165.1" y="-154.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-153.924" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__16" gate="HEADER" x="165.1" y="-172.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-171.704" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__17" gate="HEADER" x="165.1" y="-190.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-189.484" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__18" gate="HEADER" x="165.1" y="-208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-207.264" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="IO__19" gate="HEADER" x="165.1" y="-226.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="178.816" y="-225.044" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D1" gate="1" x="35.56" y="96.52" rot="R270"/>
+<instance part="SUPPLY4" gate="+12V" x="73.66" y="106.68" smashed="yes">
+<attribute name="VALUE" x="71.12" y="109.855" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="GND" x="35.56" y="88.9" smashed="yes">
+<attribute name="VALUE" x="31.115" y="84.201" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="22.86" y="101.6" smashed="yes">
+<attribute name="VALUE" x="19.685" y="96.901" size="1.778" layer="96"/>
+</instance>
+<instance part="D2" gate="1" x="86.36" y="96.52" rot="R90"/>
+<instance part="SUPPLY7" gate="GND" x="86.36" y="88.9" smashed="yes">
+<attribute name="VALUE" x="81.915" y="84.201" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1256,27 +1853,39 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="17.78" y="53.34"/>
 <junction x="27.94" y="53.34"/>
 <wire x1="27.94" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A1" pin="GND"/>
 <wire x1="55.88" y1="53.34" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="53.34" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="53.34" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <junction x="55.88" y="53.34"/>
 <pinref part="C3" gate="G$1" pin="-"/>
-<pinref part="TNSY_GND" gate="HEADER" pin="3"/>
-<wire x1="83.82" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="17.78" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
-<junction x="81.28" y="53.34"/>
+<junction x="73.66" y="53.34"/>
 <pinref part="PIXI_GND" gate="HEADER" pin="3"/>
 <wire x1="160.02" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="0" x2="144.78" y2="0" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="0" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="0" x2="157.48" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="-2.54" x2="198.12" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-2.54" x2="198.12" y2="0" width="0.1524" layer="91"/>
 <pinref part="PIXI_GND2" gate="HEADER" pin="3"/>
 <wire x1="198.12" y1="0" x2="195.58" y2="0" width="0.1524" layer="91"/>
 <junction x="157.48" y="0"/>
+<pinref part="IC2" gate="A1" pin="GND"/>
+<pinref part="TNSY_GND" gate="HEADER" pin="3"/>
+<wire x1="83.82" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<junction x="81.28" y="53.34"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="GND" pin="PE"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="86.36" y1="91.44" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<pinref part="SUPPLY5" gate="GND" pin="PE"/>
+<wire x1="35.56" y1="93.98" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1292,12 +1901,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="+V3" gate="HEADER" pin="3"/>
 <wire x1="17.78" y1="66.04" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
-<pinref part="IC1" gate="A1" pin="VI"/>
 <wire x1="27.94" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 <junction x="27.94" y="71.12"/>
+<pinref part="IC2" gate="A1" pin="VI"/>
 </segment>
 <segment>
-<pinref part="AVDDIO" gate="HEADER" pin="3"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
 </segment>
 </net>
@@ -1316,44 +1925,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="SUPPLY2" gate="G$1" pin="-12V"/>
 </segment>
 <segment>
-<pinref part="AVSSIO" gate="HEADER" pin="3"/>
-<wire x1="172.72" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="-12V"/>
-<wire x1="165.1" y1="38.1" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="IC1" gate="A1" pin="VO"/>
-<wire x1="81.28" y1="63.5" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="+"/>
-<pinref part="5V" gate="HEADER" pin="3"/>
-<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<junction x="81.28" y="71.12"/>
-<pinref part="TNSY_VIN" gate="HEADER" pin="3"/>
-<wire x1="198.12" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="127" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="127" y1="17.78" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<junction x="127" y="71.12"/>
-<pinref part="PIXI_5V" gate="HEADER" pin="3"/>
-<wire x1="195.58" y1="2.54" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="2.54" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<junction x="198.12" y="71.12"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="TNSY_3.3V" gate="HEADER" pin="3"/>
-<wire x1="124.46" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="12.7" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="PIXI_3.3V" gate="HEADER" pin="3"/>
-<wire x1="142.24" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="3.3V" gate="HEADER" pin="3"/>
-<wire x1="200.66" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="50.8" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
-<junction x="142.24" y="12.7"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="SUPPLY6" gate="G$1" pin="-12V"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1537,6 +2110,381 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="TNSY_9" gate="HEADER" pin="3"/>
 <pinref part="9" gate="HEADER" pin="3"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="TNSY_3.3V" gate="HEADER" pin="3"/>
+<wire x1="124.46" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="12.7" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="PIXI_3.3V" gate="HEADER" pin="3"/>
+<wire x1="142.24" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="3.3V" gate="HEADER" pin="3"/>
+<wire x1="200.66" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="50.8" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
+<junction x="142.24" y="12.7"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<wire x1="73.66" y1="63.5" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="5V" gate="HEADER" pin="3"/>
+<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<junction x="73.66" y="71.12"/>
+<pinref part="TNSY_VIN" gate="HEADER" pin="3"/>
+<wire x1="198.12" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="17.78" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<junction x="127" y="71.12"/>
+<pinref part="PIXI_5V" gate="HEADER" pin="3"/>
+<wire x1="195.58" y1="2.54" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="2.54" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<junction x="198.12" y="71.12"/>
+<pinref part="IC2" gate="A1" pin="VO"/>
+<label x="73.66" y="73.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PIXI_0" gate="HEADER" pin="3"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-60.96" x2="55.88" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="IO_0" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-60.96" x2="66.04" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="IO__0" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-63.5" x2="68.58" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="PIXI_1" gate="HEADER" pin="3"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-78.74" x2="55.88" y2="-78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="IO_1" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-78.74" x2="66.04" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="IO__1" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-81.28" x2="68.58" y2="-78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="PIXI_2" gate="HEADER" pin="3"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-96.52" x2="55.88" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="IO_2" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-96.52" x2="66.04" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="IO__2" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-99.06" x2="68.58" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="PIXI_3" gate="HEADER" pin="3"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-114.3" x2="55.88" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="IO_3" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-114.3" x2="66.04" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="IO__3" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-116.84" x2="68.58" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="PIXI_4" gate="HEADER" pin="3"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-132.08" x2="55.88" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="IO_4" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-132.08" x2="66.04" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="IO__4" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-134.62" x2="68.58" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="PIXI_5" gate="HEADER" pin="3"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-152.4" x2="55.88" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="IO_5" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-152.4" x2="66.04" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="IO__5" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-154.94" x2="68.58" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="PIXI_6" gate="HEADER" pin="3"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-170.18" x2="55.88" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="IO_6" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-170.18" x2="66.04" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="IO__6" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-172.72" x2="68.58" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="PIXI_7" gate="HEADER" pin="3"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-187.96" x2="55.88" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="IO_7" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-187.96" x2="66.04" y2="-187.96" width="0.1524" layer="91"/>
+<pinref part="IO__7" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-190.5" x2="68.58" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="PIXI_8" gate="HEADER" pin="3"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-205.74" x2="55.88" y2="-205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="IO_8" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-205.74" x2="66.04" y2="-205.74" width="0.1524" layer="91"/>
+<pinref part="IO__8" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-208.28" x2="68.58" y2="-205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="PIXI_9" gate="HEADER" pin="3"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="-223.52" x2="55.88" y2="-223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="IO_9" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-223.52" x2="66.04" y2="-223.52" width="0.1524" layer="91"/>
+<pinref part="IO__9" gate="HEADER" pin="3"/>
+<wire x1="68.58" y1="-226.06" x2="68.58" y2="-223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="PIXI_10" gate="HEADER" pin="3"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-60.96" x2="149.86" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="IO_10" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-60.96" x2="160.02" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="IO__10" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-63.5" x2="162.56" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="PIXI_11" gate="HEADER" pin="3"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-78.74" x2="149.86" y2="-78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="IO_11" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-78.74" x2="160.02" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="IO__11" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-81.28" x2="162.56" y2="-78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="PIXI_12" gate="HEADER" pin="3"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-96.52" x2="149.86" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="IO_12" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-96.52" x2="160.02" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="IO__12" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-99.06" x2="162.56" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="PIXI_13" gate="HEADER" pin="3"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-114.3" x2="149.86" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="IO_13" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-114.3" x2="160.02" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="IO__13" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-116.84" x2="162.56" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<pinref part="PIXI_14" gate="HEADER" pin="3"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-132.08" x2="149.86" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="IO_14" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-132.08" x2="160.02" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="IO__14" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-134.62" x2="162.56" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="PIXI_15" gate="HEADER" pin="3"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-152.4" x2="149.86" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="IO_15" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-152.4" x2="160.02" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="IO__15" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-154.94" x2="162.56" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="PIXI_16" gate="HEADER" pin="3"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-170.18" x2="149.86" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="IO_16" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-170.18" x2="160.02" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="IO__16" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-172.72" x2="162.56" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="PIXI_17" gate="HEADER" pin="3"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-187.96" x2="149.86" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="IO_17" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-187.96" x2="160.02" y2="-187.96" width="0.1524" layer="91"/>
+<pinref part="IO__17" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-190.5" x2="162.56" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="PIXI_18" gate="HEADER" pin="3"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-205.74" x2="149.86" y2="-205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="IO_18" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-205.74" x2="160.02" y2="-205.74" width="0.1524" layer="91"/>
+<pinref part="IO__18" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-208.28" x2="162.56" y2="-205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="PIXI_19" gate="HEADER" pin="3"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-223.52" x2="149.86" y2="-223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="IO_19" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-223.52" x2="160.02" y2="-223.52" width="0.1524" layer="91"/>
+<pinref part="IO__19" gate="HEADER" pin="3"/>
+<wire x1="162.56" y1="-226.06" x2="162.56" y2="-223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="AVDDIO" gate="HEADER" pin="3"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="86.36" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="AVSSIO" gate="HEADER" pin="3"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="35.56" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="99.06" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
