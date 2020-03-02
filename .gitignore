@@ -9,3 +9,6 @@ Thumbs.db
 *.*#*
 *.zip
 gerber
+
+# v-carve files
+*.gcode
