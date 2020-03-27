@@ -154,10 +154,14 @@
 <wire x1="22.86" y1="15.24" x2="22.86" y2="72.39" width="0.1524" layer="21"/>
 <wire x1="22.86" y1="72.39" x2="48.26" y2="72.39" width="0.1524" layer="21"/>
 <wire x1="48.26" y1="72.39" x2="48.26" y2="15.24" width="0.1524" layer="21"/>
-<text x="27.94" y="35.56" size="1.4224" layer="25" ratio="10">Rob Ellis 2020</text>
+<text x="2.54" y="17.78" size="1.4224" layer="25" ratio="10">Rob Ellis 2020</text>
 <dimension x1="3.81" y1="96.52" x2="3.81" y2="60.96" x3="-5.08" y3="78.74" textsize="1.778" layer="48"/>
-<text x="31.75" y="31.75" size="1.4224" layer="25" ratio="10">PGTNX01</text>
+<text x="6.35" y="12.7" size="1.4224" layer="25" ratio="10">PGTNX01</text>
 <dimension x1="78.74" y1="0" x2="78.74" y2="100.33" x3="85.09" y3="50.165" textsize="1.778" layer="48"/>
+<dimension x1="68.58" y1="68.58" x2="68.58" y2="60.96" x3="78.74" y3="64.77" textsize="1.778" layer="51"/>
+<dimension x1="68.58" y1="53.34" x2="68.58" y2="60.96" x3="78.74" y3="57.15" textsize="1.778" layer="51"/>
+<text x="50.8" y="17.78" size="1.4224" layer="25" ratio="10">Rob Ellis 2020</text>
+<text x="54.61" y="12.7" size="1.4224" layer="25" ratio="10">PGTNX01</text>
 </plain>
 <libraries>
 <library name="connectors">
@@ -765,7 +769,7 @@ einem neuen Namen ab.</description>
 <element name="3.3V" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="71.12">
 <attribute name="SPICEPREFIX" value="X" x="1.27" y="71.12" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$5" library="mechanical" package="PIGATRON-LOGO" value="" x="36.83" y="40.64"/>
+<element name="U$5" library="mechanical" package="PIGATRON-LOGO" value="" x="11.43" y="24.13"/>
 <element name="U$6" library="mechanical" package="STANDOFF/3.0" value="" x="66.04" y="60.96"/>
 <element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="66.04" y="3.81"/>
 <element name="U$7" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="3.81"/>
@@ -974,6 +978,7 @@ einem neuen Namen ab.</description>
 </element>
 <element name="D1" library="transistors" package="DO35-7" value="" x="50.8" y="82.55" rot="R270"/>
 <element name="D2" library="transistors" package="DO35-7" value="" x="53.34" y="82.55" rot="R90"/>
+<element name="U$8" library="mechanical" package="PIGATRON-LOGO" value="" x="59.69" y="24.13"/>
 </elements>
 <signals>
 <signal name="GND">

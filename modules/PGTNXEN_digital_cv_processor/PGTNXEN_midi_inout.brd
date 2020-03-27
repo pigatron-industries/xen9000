@@ -149,6 +149,8 @@
 <wire x1="0" y1="59.68" x2="0" y2="7.62" width="0" layer="20"/>
 <text x="13.716" y="39.878" size="1.4224" layer="25" ratio="10">MIDI IN OUT</text>
 <text x="36.195" y="47.117" size="1.016" layer="25" rot="R90">GND</text>
+<dimension x1="3.81" y1="55.88" x2="3.81" y2="11.43" x3="-3.81" y3="33.655" textsize="1.016" layer="51"/>
+<dimension x1="3.81" y1="11.43" x2="35.56" y2="11.43" x3="19.685" y3="5.08" textsize="1.016" layer="51"/>
 </plain>
 <libraries>
 <library name="connectors">
