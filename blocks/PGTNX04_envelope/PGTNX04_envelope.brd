@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -419,6 +419,9 @@ einem neuen Namen ab.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -591,7 +594,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="3.175" y="18.796" size="1.016" layer="25" ratio="10"/>
 <attribute name="SPICEPREFIX" value="X" x="1.27" y="19.05" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R12" library="resistors" package="RESISTOR/7.5" value="150R" x="7.62" y="21.59" smashed="yes">
+<element name="R12" library="resistors" package="RESISTOR/7.5" value="200k" x="7.62" y="21.59" smashed="yes">
 <attribute name="NAME" x="5.08" y="21.082" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="4.699" y="22.9362" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -783,11 +786,11 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="42.545" y="19.304" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="SPICEPREFIX" value="X" x="44.45" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$1" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="3.81"/>
-<element name="U$2" library="mechanical" package="STANDOFF/3.0" value="" x="41.91" y="3.81"/>
-<element name="U$3" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="66.04"/>
-<element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="41.91" y="66.04"/>
-<element name="U$5" library="mechanical" package="PIGATRON-LOGO" value="" x="10.16" y="57.15"/>
+<element name="U$1" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="3.81" smashed="yes"/>
+<element name="U$2" library="mechanical" package="STANDOFF/3.0" value="" x="41.91" y="3.81" smashed="yes"/>
+<element name="U$3" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="66.04" smashed="yes"/>
+<element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="41.91" y="66.04" smashed="yes"/>
+<element name="U$5" library="mechanical" package="PIGATRON-LOGO" value="" x="10.16" y="57.15" smashed="yes"/>
 <element name="STN2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="44.45" y="16.51" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.545" y="16.764" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="SPICEPREFIX" value="X" x="44.45" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1295,6 +1298,13 @@ einem neuen Namen ab.</description>
 <contactref element="STN2" pad="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
