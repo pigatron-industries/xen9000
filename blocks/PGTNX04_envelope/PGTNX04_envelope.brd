@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -574,7 +574,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="33.274" y="42.799" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="35.179" y="44.704" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R1" library="resistors" package="RESISTOR/7.5" value="750R" x="12.7" y="11.43" smashed="yes">
+<element name="R1" library="resistors" package="RESISTOR/7.5" value="470R" x="12.7" y="11.43" smashed="yes">
 <attribute name="NAME" x="10.16" y="10.922" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="9.779" y="12.7762" size="1.27" layer="27" ratio="10"/>
 </element>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1025,7 +1025,7 @@ type 0207, grid 7.5 mm</description>
 </part>
 <part name="C3" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5"/>
 <part name="C4" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5"/>
-<part name="R1" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="750R"/>
+<part name="R1" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="470R"/>
 <part name="SUPPLY7" library="supply" deviceset="-12V" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
@@ -1188,7 +1188,7 @@ type 0207, grid 7.5 mm</description>
 <sheets>
 <sheet>
 <plain>
-<text x="161.29" y="-22.098" size="1.778" layer="95">Connect to STNCV</text>
+<text x="161.29" y="-22.098" size="1.778" layer="95">Connect to STNCVN</text>
 <text x="208.28" y="-12.7" size="1.778" layer="95">From STNCV input jack normalled to +V</text>
 </plain>
 <instances>
