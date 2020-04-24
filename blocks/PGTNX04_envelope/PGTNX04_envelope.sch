@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1648,6 +1648,11 @@ type 0207, grid 7.5 mm</description>
 <pinref part="SUPPLY16" gate="GND" pin="PE"/>
 <wire x1="88.9" y1="-193.04" x2="86.36" y2="-193.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY21" gate="GND" pin="PE"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="-40.64" x2="73.66" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -1740,13 +1745,6 @@ type 0207, grid 7.5 mm</description>
 <pinref part="TRIGN" gate="HEADER" pin="3"/>
 <wire x1="50.8" y1="-17.78" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="50.8" y="-7.62"/>
-</segment>
-</net>
-<net name="PE" class="0">
-<segment>
-<pinref part="SUPPLY21" gate="GND" pin="PE"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="-40.64" x2="73.66" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
