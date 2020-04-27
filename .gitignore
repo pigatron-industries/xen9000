@@ -12,3 +12,4 @@ gerber
 
 # v-carve files
 *.gcode
+*.eps
