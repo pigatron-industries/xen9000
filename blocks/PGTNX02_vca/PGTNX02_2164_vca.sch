@@ -879,138 +879,6 @@ type 0207, grid 7.5 mm</description>
 <rectangle x1="-3.429" y1="-0.3048" x2="-3.175" y2="0.3048" layer="51"/>
 <rectangle x1="3.175" y1="-0.3048" x2="3.429" y2="0.3048" layer="51"/>
 </package>
-<package name="TRIMMER/64A">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt; Spectrol&lt;p&gt;
-Cermet MIL-R-22097</description>
-<wire x1="2.52" y1="-4.8" x2="-2.03" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-2.03" y1="-4.8" x2="-2.03" y2="4.8" width="0.254" layer="21"/>
-<wire x1="-2.03" y1="4.8" x2="2.52" y2="4.8" width="0.254" layer="21"/>
-<wire x1="2.52" y1="4.8" x2="2.52" y2="3.2" width="0.254" layer="21"/>
-<wire x1="2.52" y1="3.2" x2="2.27" y2="3.2" width="0.254" layer="21"/>
-<wire x1="2.27" y1="3.2" x2="2.27" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="2.27" y1="-3.2" x2="2.52" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="2.52" y1="-3.2" x2="2.52" y2="-4.8" width="0.254" layer="21"/>
-<circle x="-0.58" y="-3.05" radius="1.1" width="0.1524" layer="21"/>
-<pad name="1" x="1.27" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-2.62" y="-4.95" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.35" y="-4.95" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.78" y1="-4.1" x2="-0.38" y2="-2" layer="21"/>
-</package>
-<package name="TRIMMER/64B">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt; Spectrol&lt;p&gt;
-Cermet MIL-R-22097</description>
-<wire x1="2.52" y1="-4.8" x2="-2.03" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-2.03" y1="-4.8" x2="-2.03" y2="4.8" width="0.254" layer="21"/>
-<wire x1="-2.03" y1="4.8" x2="2.52" y2="4.8" width="0.254" layer="21"/>
-<wire x1="2.52" y1="4.8" x2="2.52" y2="3.2" width="0.254" layer="21"/>
-<wire x1="2.52" y1="3.2" x2="2.27" y2="3.2" width="0.254" layer="21"/>
-<wire x1="2.27" y1="3.2" x2="2.27" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="2.27" y1="-3.2" x2="2.52" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="2.52" y1="-3.2" x2="2.52" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-1.83" y1="4.95" x2="-1.83" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-1.83" y1="6.15" x2="-1.03" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-1.03" y1="6.15" x2="-1.03" y2="5.7" width="0.1524" layer="21"/>
-<wire x1="-1.03" y1="5.7" x2="-0.48" y2="5.7" width="0.1524" layer="21"/>
-<wire x1="-0.48" y1="5.7" x2="-0.48" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-0.48" y1="6.15" x2="0.37" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="0.37" y1="6.15" x2="0.37" y2="4.95" width="0.1524" layer="21"/>
-<pad name="1" x="1.27" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="0.11" y="-3.68" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-2.47" y="-3.4" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TRIMMER/64C">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt; Spectrol&lt;p&gt;
-Cermet MIL-R-22097</description>
-<wire x1="1.05" y1="-4.8" x2="-3.3" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-3.3" y1="-4.8" x2="-3.3" y2="4.8" width="0.254" layer="21"/>
-<wire x1="-3.3" y1="4.8" x2="1.05" y2="4.8" width="0.254" layer="21"/>
-<wire x1="1.05" y1="4.8" x2="1.05" y2="3.2" width="0.254" layer="21"/>
-<wire x1="1.05" y1="3.2" x2="0.8" y2="3.2" width="0.254" layer="21"/>
-<wire x1="0.8" y1="3.2" x2="0.8" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="0.8" y1="-3.2" x2="1.05" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="1.05" y1="-3.2" x2="1.05" y2="-4.8" width="0.254" layer="21"/>
-<circle x="-1.9" y="-3.35" radius="1.1" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-3.84" y="-4.95" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.75" y="-4.95" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.1" y1="-4.4" x2="-1.7" y2="-2.3" layer="21"/>
-</package>
-<package name="TRIMMER/64D">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt; Spectrol&lt;p&gt;
-Cermet MIL-R-22097</description>
-<wire x1="1.05" y1="-4.8" x2="-3.3" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-3.3" y1="-4.8" x2="-3.3" y2="4.8" width="0.254" layer="21"/>
-<wire x1="-3.3" y1="4.8" x2="1.05" y2="4.8" width="0.254" layer="21"/>
-<wire x1="1.05" y1="4.8" x2="1.05" y2="3.2" width="0.254" layer="21"/>
-<wire x1="1.05" y1="3.2" x2="0.8" y2="3.2" width="0.254" layer="21"/>
-<wire x1="0.8" y1="3.2" x2="0.8" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="0.8" y1="-3.2" x2="1.05" y2="-3.2" width="0.254" layer="21"/>
-<wire x1="1.05" y1="-3.2" x2="1.05" y2="-4.8" width="0.254" layer="21"/>
-<wire x1="-3.1" y1="4.95" x2="-3.1" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-3.1" y1="6.15" x2="-2.3" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-2.3" y1="6.15" x2="-2.3" y2="5.7" width="0.1524" layer="21"/>
-<wire x1="-2.3" y1="5.7" x2="-1.75" y2="5.7" width="0.1524" layer="21"/>
-<wire x1="-1.75" y1="5.7" x2="-1.75" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-1.75" y1="6.15" x2="-0.9" y2="6.15" width="0.1524" layer="21"/>
-<wire x1="-0.9" y1="6.15" x2="-0.9" y2="4.95" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-3.65" y="-4.9" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.69" y="-4.92" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TRIMMER/LI15">
-<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;&lt;p&gt;
-Piher</description>
-<wire x1="6.35" y1="-6.604" x2="6.35" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="-6.35" y1="-7.62" x2="-6.35" y2="-6.731" width="0.1524" layer="51"/>
-<wire x1="-5.969" y1="-4.445" x2="-5.08" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-3.81" x2="-3.175" y2="-5.08" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-5.08" x2="-3.175" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-6.35" x2="-3.556" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="-3.556" y1="-6.35" x2="-3.556" y2="-7.62" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-7.62" x2="3.556" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-6.35" x2="3.175" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-6.35" x2="3.175" y2="-5.08" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-5.08" x2="5.08" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-3.81" x2="5.969" y2="-4.445" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="1.397" x2="-0.127" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="-0.127" y1="0.381" x2="-0.508" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0.762" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-1.397" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="0.889" x2="0.381" y2="-0.127" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="-0.127" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.508" x2="0" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.508" x2="-0.889" y2="-1.397" width="0.1524" layer="21"/>
-<wire x1="6.35" y1="-7.62" x2="5.969" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="-6.35" y1="-7.62" x2="-5.969" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="-3.556" y1="-7.62" x2="3.556" y2="-7.62" width="0.1524" layer="21"/>
-<wire x1="5.969" y1="-4.445" x2="5.969" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="5.969" y1="-6.35" x2="5.969" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="-5.969" y1="-4.445" x2="-5.969" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="-5.969" y1="-6.35" x2="-5.969" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="5.969" y1="-7.62" x2="3.556" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="-5.969" y1="-7.62" x2="-3.556" y2="-7.62" width="0.1524" layer="51"/>
-<wire x1="6.35" y1="-6.604" x2="6.35" y2="-4.191" width="0.1524" layer="21"/>
-<wire x1="-6.35" y1="-6.731" x2="-6.35" y2="-4.191" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.1524" layer="21" curve="-180"/>
-<wire x1="6.3402" y1="-4.2268" x2="7.62" y2="0" width="0.1524" layer="21" curve="33.690004"/>
-<wire x1="-7.62" y1="0" x2="-6.3402" y2="-4.2268" width="0.1524" layer="21" curve="33.690004"/>
-<circle x="0" y="0" radius="1.8034" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.794" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="3.81" width="0.1524" layer="51"/>
-<pad name="A" x="-5.08" y="-7.62" drill="1.3208" shape="long"/>
-<pad name="S" x="0" y="5.08" drill="1.3208" shape="long"/>
-<pad name="E" x="5.08" y="-7.62" drill="1.3208" shape="long"/>
-<text x="-2.54" y="-9.398" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.445" y="-3.429" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="R-EU">
@@ -1022,25 +890,6 @@ Piher</description>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="R-TRIM">
-<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
-<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1063,64 +912,6 @@ Piher</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TRIMMER" prefix="R" uservalue="yes">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="R-TRIM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="64W" package="TRIMMER/64A">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="64X" package="TRIMMER/64B">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="64Y" package="TRIMMER/64C">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="64Z" package="TRIMMER/64D">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PT15" package="TRIMMER/LI15">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="E" pad="E"/>
-<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1297,6 +1088,46 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="controls_off_brd">
+<packages>
+</packages>
+<symbols>
+<symbol name="POTENTIOMETER">
+<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="1.778" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="0" x2="1.778" y2="0.508" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<wire x1="1.778" y1="0.508" x2="1.778" y2="-0.508" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POTENTIOMETER" prefix="R" uservalue="yes">
+<description>&lt;b&gt;Trimm resistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1389,7 +1220,7 @@ high speed (Philips)</description>
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="AINB" library="connectors" deviceset="HEADER/MALE/01" device=""/>
-<part name="IC2" library="ic_package" deviceset="DIL16" device=""/>
+<part name="IC2" library="ic_package" deviceset="DIL16" device="" value="V2164"/>
 <part name="R7" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="30k"/>
 <part name="R8" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="30k"/>
 <part name="C7" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100pF"/>
@@ -1404,7 +1235,6 @@ high speed (Philips)</description>
 <part name="C11" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100pF"/>
 <part name="C12" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100pF"/>
 <part name="R9" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="38k"/>
-<part name="R14" library="resistors" deviceset="TRIMMER" device="64X" value="100k"/>
 <part name="SUPPLY11" library="supply" deviceset="+12V" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
@@ -1449,7 +1279,7 @@ high speed (Philips)</description>
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="D1" library="transistors" deviceset="1N4148" device="DO35-7" value="BAT85"/>
-<part name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="79LXX" device="" package3d_urn="urn:adsk.eagle:package:30345/1"/>
+<part name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="79LXX" device="" package3d_urn="urn:adsk.eagle:package:30345/1" value="79L05"/>
 <part name="C15" library="capacitors" deviceset="CAPACITOR/POLARIZED" device="E2.5-6" value="1uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
@@ -1457,9 +1287,21 @@ high speed (Philips)</description>
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="R21" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="300k"/>
-<part name="BIAS2" library="connectors" deviceset="HEADER/MALE/01" device=""/>
-<part name="BIAS1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
-<part name="BIAS3" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="BIA2" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="BIA1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="BIA3" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="R22" library="controls_off_brd" deviceset="POTENTIOMETER" device="" value="100k"/>
+<part name="SUPPLY20" library="supply" deviceset="+12V" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="SUPPLY21" library="supply" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="R14" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="300k"/>
+<part name="BIB2" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="BIB1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="BIB3" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="R23" library="controls_off_brd" deviceset="POTENTIOMETER" device="" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -1665,15 +1507,11 @@ high speed (Philips)</description>
 <attribute name="NAME" x="39.37" y="-39.1414" size="1.778" layer="95"/>
 <attribute name="VALUE" x="39.37" y="-43.942" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="-10.16" y="-17.78" smashed="yes">
-<attribute name="NAME" x="-16.129" y="-21.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-13.97" y="-21.59" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY11" gate="+12V" x="-53.34" y="17.78" smashed="yes">
+<attribute name="VALUE" x="-55.88" y="20.955" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY11" gate="+12V" x="-10.16" y="0" smashed="yes">
-<attribute name="VALUE" x="-12.7" y="3.175" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY12" gate="GND" x="-10.16" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="-14.605" y="-37.719" size="1.778" layer="96"/>
+<instance part="SUPPLY12" gate="GND" x="-53.34" y="-15.24" smashed="yes">
+<attribute name="VALUE" x="-57.785" y="-19.939" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="G$1" x="-10.16" y="17.78" smashed="yes">
 <attribute name="NAME" x="-13.97" y="19.2786" size="1.778" layer="95"/>
@@ -1779,18 +1617,45 @@ high speed (Philips)</description>
 <instance part="SUPPLY19" gate="GND" x="83.82" y="73.66" smashed="yes">
 <attribute name="VALUE" x="79.375" y="68.961" size="1.778" layer="96"/>
 </instance>
-<instance part="R21" gate="G$1" x="-10.16" y="-7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="-8.6614" y="-3.81" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-13.462" y="-3.81" size="1.778" layer="96" rot="R270"/>
+<instance part="R21" gate="G$1" x="-53.34" y="10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="-51.8414" y="13.97" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-56.642" y="13.97" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="BIAS2" gate="HEADER" x="-5.08" y="-20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-4.064" y="-34.036" size="1.778" layer="96" rot="R90"/>
+<instance part="BIA2" gate="HEADER" x="-48.26" y="-2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="-47.244" y="-16.256" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BIAS1" gate="HEADER" x="-12.7" y="-12.7" smashed="yes">
-<attribute name="NAME" x="-26.416" y="-13.716" size="1.778" layer="96"/>
+<instance part="BIA1" gate="HEADER" x="-55.88" y="5.08" smashed="yes">
+<attribute name="NAME" x="-69.596" y="4.064" size="1.778" layer="96"/>
 </instance>
-<instance part="BIAS3" gate="HEADER" x="-12.7" y="-22.86" smashed="yes">
-<attribute name="NAME" x="-26.416" y="-23.876" size="1.778" layer="96"/>
+<instance part="BIA3" gate="HEADER" x="-55.88" y="-5.08" smashed="yes">
+<attribute name="NAME" x="-69.596" y="-6.096" size="1.778" layer="96"/>
+</instance>
+<instance part="R22" gate="G$1" x="-53.34" y="0" smashed="yes">
+<attribute name="NAME" x="-59.309" y="-3.81" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-57.15" y="-3.81" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY20" gate="+12V" x="-53.34" y="-30.48" smashed="yes">
+<attribute name="VALUE" x="-55.88" y="-27.305" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY21" gate="GND" x="-53.34" y="-63.5" smashed="yes">
+<attribute name="VALUE" x="-57.785" y="-68.199" size="1.778" layer="96"/>
+</instance>
+<instance part="R14" gate="G$1" x="-53.34" y="-38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="-51.8414" y="-34.29" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-56.642" y="-34.29" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="BIB2" gate="HEADER" x="-48.26" y="-50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="-47.244" y="-64.516" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="BIB1" gate="HEADER" x="-55.88" y="-43.18" smashed="yes">
+<attribute name="NAME" x="-69.596" y="-44.196" size="1.778" layer="96"/>
+</instance>
+<instance part="BIB3" gate="HEADER" x="-55.88" y="-53.34" smashed="yes">
+<attribute name="NAME" x="-69.596" y="-54.356" size="1.778" layer="96"/>
+</instance>
+<instance part="R23" gate="G$1" x="-53.34" y="-48.26" smashed="yes">
+<attribute name="NAME" x="-59.309" y="-52.07" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-57.15" y="-52.07" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1856,11 +1721,11 @@ high speed (Philips)</description>
 <pinref part="SUPPLY10" gate="GND" pin="PE"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="E"/>
 <pinref part="SUPPLY12" gate="GND" pin="PE"/>
-<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="BIAS3" gate="HEADER" pin="3"/>
-<junction x="-10.16" y="-22.86"/>
+<wire x1="-53.34" y1="-12.7" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="BIA3" gate="HEADER" pin="3"/>
+<pinref part="R22" gate="G$1" pin="E"/>
+<junction x="-53.34" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
@@ -1897,6 +1762,13 @@ high speed (Philips)</description>
 <pinref part="SUPPLY19" gate="GND" pin="PE"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY21" gate="GND" pin="PE"/>
+<wire x1="-53.34" y1="-60.96" x2="-53.34" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="BIB3" gate="HEADER" pin="3"/>
+<pinref part="R23" gate="G$1" pin="E"/>
+<junction x="-53.34" y="-53.34"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -1923,6 +1795,7 @@ high speed (Philips)</description>
 <wire x1="53.34" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="88.9" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 <junction x="53.34" y="96.52"/>
+<junction x="22.86" y="93.98"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="-15.24" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
@@ -1936,6 +1809,10 @@ high speed (Philips)</description>
 <segment>
 <pinref part="SUPPLY11" gate="+12V" pin="+12V"/>
 <pinref part="R21" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SUPPLY20" gate="+12V" pin="+12V"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -1966,6 +1843,7 @@ high speed (Philips)</description>
 <pinref part="IC1" gate="A" pin="IN"/>
 <wire x1="88.9" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <junction x="73.66" y="63.5"/>
+<junction x="22.86" y="66.04"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="-12V"/>
@@ -2190,17 +2068,13 @@ high speed (Philips)</description>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="S"/>
-<wire x1="-5.08" y1="-17.78" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-17.78" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-17.78" x2="5.08" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="5.08" y="-17.78"/>
 <pinref part="SWEB2" gate="HEADER" pin="3"/>
+<wire x1="5.08" y1="-48.26" x2="5.08" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-63.5" x2="10.16" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="SWEA2" gate="HEADER" pin="3"/>
-<wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="BIAS2" gate="HEADER" pin="3"/>
-<junction x="-5.08" y="-17.78"/>
+<wire x1="-48.26" y1="-48.26" x2="5.08" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="BIB2" gate="HEADER" pin="3"/>
+<pinref part="R23" gate="G$1" pin="S"/>
+<junction x="-48.26" y="-48.26"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -2350,15 +2224,38 @@ high speed (Philips)</description>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="A"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="BIAS1" gate="HEADER" pin="3"/>
-<junction x="-10.16" y="-12.7"/>
+<pinref part="BIA1" gate="HEADER" pin="3"/>
+<pinref part="R22" gate="G$1" pin="A"/>
+<junction x="-53.34" y="5.08"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="BIB1" gate="HEADER" pin="3"/>
+<pinref part="R23" gate="G$1" pin="A"/>
+<junction x="-53.34" y="-43.18"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="SWEA2" gate="HEADER" pin="3"/>
+<wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="BIA2" gate="HEADER" pin="3"/>
+<pinref part="R22" gate="G$1" pin="S"/>
+<junction x="-48.26" y="0"/>
+<wire x1="-48.26" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,73.66,86.36,IC3P,V+,+12V,,,"/>
+<approved hash="104,1,73.66,71.12,IC3P,V-,-12V,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
