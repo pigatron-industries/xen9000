@@ -1209,13 +1209,13 @@ high speed (Philips)</description>
 <part name="R2" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="6.2k"/>
 <part name="R3" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="30k"/>
 <part name="C3" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="560pF"/>
-<part name="R4" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="500R"/>
+<part name="R4" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="510R"/>
 <part name="SUPPLY5" library="supply" deviceset="-12V" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="R5" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="30k"/>
 <part name="C4" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="560pF"/>
-<part name="R6" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="500R"/>
+<part name="R6" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="510R"/>
 <part name="SUPPLY7" library="supply" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
@@ -1229,9 +1229,9 @@ high speed (Philips)</description>
 <part name="R10" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="100k"/>
 <part name="R11" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="100k"/>
 <part name="C9" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="560pF"/>
-<part name="R12" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="500R"/>
+<part name="R12" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="510R"/>
 <part name="C10" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="560pF"/>
-<part name="R13" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="500R"/>
+<part name="R13" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="510R"/>
 <part name="C11" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100pF"/>
 <part name="C12" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100pF"/>
 <part name="R9" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="38k"/>
@@ -1249,12 +1249,12 @@ high speed (Philips)</description>
 <part name="CVINB2" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="C13" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100nF"/>
 <part name="C14" library="capacitors" deviceset="CAPACITOR" device="CERAMICDISC/5" value="100nF"/>
-<part name="SWLA1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="SWCA1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="SWEA1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
-<part name="SWLB1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="SWLA1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="SWCB1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="SWEB1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
+<part name="SWLB1" library="connectors" deviceset="HEADER/MALE/01" device=""/>
 <part name="R19" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="1M"/>
 <part name="R20" library="resistors" deviceset="RESISTOR" device="RESISTOR/UPRIGHT/7.5" value="1M"/>
 <part name="SUPPLY14" library="supply" deviceset="GND" device="">
@@ -1543,22 +1543,22 @@ high speed (Philips)</description>
 <attribute name="NAME" x="54.864" y="74.041" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.864" y="68.961" size="1.778" layer="96"/>
 </instance>
-<instance part="SWLA1" gate="HEADER" x="27.94" y="25.4" smashed="yes">
+<instance part="SWCA1" gate="HEADER" x="27.94" y="25.4" smashed="yes">
 <attribute name="NAME" x="14.224" y="24.384" size="1.778" layer="96"/>
 </instance>
-<instance part="SWCA1" gate="HEADER" x="27.94" y="27.94" smashed="yes">
+<instance part="SWEA1" gate="HEADER" x="27.94" y="27.94" smashed="yes">
 <attribute name="NAME" x="14.224" y="26.924" size="1.778" layer="96"/>
 </instance>
-<instance part="SWEA1" gate="HEADER" x="27.94" y="30.48" smashed="yes">
+<instance part="SWLA1" gate="HEADER" x="27.94" y="30.48" smashed="yes">
 <attribute name="NAME" x="14.224" y="29.464" size="1.778" layer="96"/>
 </instance>
-<instance part="SWLB1" gate="HEADER" x="27.94" y="-43.18" smashed="yes">
+<instance part="SWCB1" gate="HEADER" x="27.94" y="-43.18" smashed="yes">
 <attribute name="NAME" x="14.224" y="-44.196" size="1.778" layer="96"/>
 </instance>
-<instance part="SWCB1" gate="HEADER" x="27.94" y="-40.64" smashed="yes">
+<instance part="SWEB1" gate="HEADER" x="27.94" y="-40.64" smashed="yes">
 <attribute name="NAME" x="14.224" y="-41.656" size="1.778" layer="96"/>
 </instance>
-<instance part="SWEB1" gate="HEADER" x="27.94" y="-38.1" smashed="yes">
+<instance part="SWLB1" gate="HEADER" x="27.94" y="-38.1" smashed="yes">
 <attribute name="NAME" x="14.224" y="-39.116" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="G$1" x="30.48" y="-2.54" smashed="yes" rot="R270">
@@ -2121,7 +2121,7 @@ high speed (Philips)</description>
 <junction x="30.48" y="-60.96"/>
 <wire x1="-2.54" y1="-58.42" x2="-2.54" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="-2.54" y="-60.96"/>
-<pinref part="SWLB1" gate="HEADER" pin="3"/>
+<pinref part="SWCB1" gate="HEADER" pin="3"/>
 <wire x1="30.48" y1="-53.34" x2="30.48" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="30.48" y="-53.34"/>
 </segment>
@@ -2153,14 +2153,14 @@ high speed (Philips)</description>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="SWCA1" gate="HEADER" pin="3"/>
+<pinref part="SWEA1" gate="HEADER" pin="3"/>
 <wire x1="30.48" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="SWLA1" gate="HEADER" pin="3"/>
+<pinref part="SWCA1" gate="HEADER" pin="3"/>
 <wire x1="38.1" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="B" pin="-IN"/>
@@ -2182,20 +2182,20 @@ high speed (Philips)</description>
 <pinref part="IC2" gate="G$1" pin="4"/>
 <wire x1="101.6" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-22.86" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="SWEA1" gate="HEADER" pin="3"/>
+<pinref part="SWLA1" gate="HEADER" pin="3"/>
 <wire x1="55.88" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="SWCB1" gate="HEADER" pin="3"/>
+<pinref part="SWEB1" gate="HEADER" pin="3"/>
 <wire x1="38.1" y1="-40.64" x2="30.48" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="SWEB1" gate="HEADER" pin="3"/>
+<pinref part="SWLB1" gate="HEADER" pin="3"/>
 <wire x1="30.48" y1="-38.1" x2="53.34" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-38.1" x2="53.34" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="5"/>
