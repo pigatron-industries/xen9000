@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -446,16 +447,23 @@ Please make sure your boards conform to these design rules.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -560,94 +568,298 @@ Please make sure your boards conform to these design rules.</description>
 <element name="-12V" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="58.42" smashed="yes">
 <attribute name="NAME" x="0.635" y="55.626" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R60" library="resistors" package="RESISTOR/7.5" value="4.7k" x="11.43" y="67.31" rot="R90"/>
+<element name="R60" library="resistors" package="RESISTOR/7.5" value="4.7k" x="11.43" y="67.31" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.938" y="64.77" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="10.0838" y="64.389" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="LED+" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="13.97" y="71.12" smashed="yes">
 <attribute name="NAME" x="15.875" y="70.866" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="GND2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="3.81" y="60.96" smashed="yes"/>
-<element name="IC1" library="ic_analogue" package="DIL14" value="TL084P" x="27.94" y="43.18" rot="R270"/>
-<element name="R1" library="resistors" package="RESISTOR/7.5" value="33k" x="11.43" y="50.8" rot="R180"/>
-<element name="R2" library="resistors" package="RESISTOR/7.5" value="33k" x="11.43" y="53.34" rot="R180"/>
-<element name="CO3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="50.8"/>
-<element name="CO1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="53.34"/>
-<element name="CO2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="48.26"/>
-<element name="R3" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="48.26" rot="R180"/>
-<element name="R4" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="45.72" rot="R180"/>
-<element name="R5" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="43.18" rot="R180"/>
-<element name="R6" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="40.64" rot="R180"/>
-<element name="CV1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="45.72"/>
-<element name="CV2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="43.18"/>
-<element name="CV3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="40.64"/>
-<element name="R7" library="resistors" package="RESISTOR/7.5" value="2k" x="21.59" y="46.99" rot="R270"/>
-<element name="R8" library="resistors" package="TRIMMER/64B" value="100R" x="22.86" y="69.85"/>
-<element name="R9" library="resistors" package="RESISTOR/7.5" value="475R" x="26.67" y="68.58" rot="R90"/>
+<element name="IC1" library="ic_analogue" package="DIL14" value="TL084P" x="27.94" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.162" y="49.276" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.035" y="42.291" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R1" library="resistors" package="RESISTOR/7.5" value="33k" x="11.43" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="51.308" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="49.4538" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R2" library="resistors" package="RESISTOR/7.5" value="33k" x="11.43" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="53.848" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="51.9938" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="CO3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="50.8" smashed="yes">
+<attribute name="NAME" x="3.175" y="50.546" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="CO1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="53.34" smashed="yes">
+<attribute name="NAME" x="3.175" y="53.086" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="CO2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="48.26" smashed="yes">
+<attribute name="NAME" x="3.175" y="48.006" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R3" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="48.768" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="46.9138" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R4" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="46.228" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="44.3738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R5" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="43.688" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="41.8338" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R6" library="resistors" package="RESISTOR/7.5" value="100k" x="11.43" y="40.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="41.148" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="14.351" y="39.2938" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="CV1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="45.72" smashed="yes">
+<attribute name="NAME" x="3.175" y="45.466" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="CV2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="43.18" smashed="yes">
+<attribute name="NAME" x="3.175" y="42.926" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="CV3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="1.27" y="40.64" smashed="yes">
+<attribute name="NAME" x="3.175" y="40.386" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R7" library="resistors" package="RESISTOR/7.5" value="2k" x="21.59" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.082" y="49.53" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="22.9362" y="49.911" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R8" library="resistors" package="TRIMMER/64B" value="100R" x="22.86" y="69.85" smashed="yes">
+<attribute name="NAME" x="22.97" y="66.17" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="20.39" y="66.45" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R9" library="resistors" package="RESISTOR/7.5" value="475R" x="26.67" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.178" y="66.04" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="25.3238" y="65.659" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="D1" library="transistors" package="DO35-7" value="1N4148DO35-7" x="29.21" y="67.31" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.845" y="72.009" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="31.877" y="65.024" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R10" library="resistors" package="RESISTOR/7.5" value="10k" x="31.75" y="67.31" rot="R270"/>
-<element name="R11" library="resistors" package="TRIMMER/64B" value="100k" x="35.56" y="69.85"/>
-<element name="C1" library="capacitors" package="CERAMICDISC/5" value="100pF" x="17.78" y="38.1" rot="R270"/>
-<element name="Q1" library="transistors" package="TO92" value="2N3904" x="7.62" y="27.94" rot="R90"/>
-<element name="Q2" library="transistors" package="TO92" value="2N3904" x="12.7" y="27.94" rot="R90"/>
-<element name="R12" library="resistors" package="RESISTOR/7.5" value="10k" x="11.43" y="35.56"/>
-<element name="R13" library="resistors" package="RESISTOR/7.5" value="1M" x="3.81" y="34.29" rot="R90"/>
-<element name="Q3" library="transistors" package="TO92" value="2N3906" x="22.86" y="27.94" rot="R90"/>
-<element name="Q4" library="transistors" package="TO92" value="2N3906" x="17.78" y="27.94" rot="R90"/>
-<element name="R14" library="resistors" package="RESISTOR/7.5" value="7.5k" x="26.67" y="26.67" rot="R90"/>
-<element name="R15" library="resistors" package="RESISTOR/7.5" value="7.5k" x="39.37" y="26.67" rot="R90"/>
-<element name="IC2" library="ic_analogue" package="DIL16" value="LM13700N" x="33.02" y="13.97" rot="R270"/>
-<element name="R16" library="resistors" package="RESISTOR/7.5" value="20k" x="26.67" y="16.51" rot="R270"/>
-<element name="R17" library="resistors" package="RESISTOR/7.5" value="20k" x="39.37" y="16.51" rot="R270"/>
-<element name="C2" library="capacitors" package="CERAMICDISC/5" value="220pF" x="38.1" y="40.64"/>
-<element name="C3" library="capacitors" package="CERAMICDISC/5" value="220pF" x="38.1" y="45.72"/>
-<element name="R18" library="resistors" package="RESISTOR/7.5" value="100k" x="46.99" y="19.05" rot="R270"/>
-<element name="R19" library="resistors" package="RESISTOR/7.5" value="100k" x="21.59" y="19.05" rot="R270"/>
-<element name="R20" library="resistors" package="RESISTOR/7.5" value="39k" x="41.91" y="8.89" rot="R90"/>
-<element name="R21" library="resistors" package="RESISTOR/7.5" value="100R" x="41.91" y="19.05" rot="R270"/>
-<element name="R22" library="resistors" package="RESISTOR/7.5" value="39k" x="24.13" y="8.89" rot="R90"/>
-<element name="R23" library="resistors" package="RESISTOR/7.5" value="100R" x="24.13" y="19.05" rot="R270"/>
-<element name="R24" library="resistors" package="RESISTOR/7.5" value="100k" x="44.45" y="19.05" rot="R90"/>
-<element name="R25" library="resistors" package="RESISTOR/7.5" value="150k" x="53.34" y="5.08"/>
-<element name="C4" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="43.18" y="50.8" rot="R180"/>
-<element name="C5" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="38.1" y="35.56" rot="R180"/>
-<element name="R26" library="resistors" package="RESISTOR/7.5" value="49.9k" x="43.18" y="55.88"/>
-<element name="R27" library="resistors" package="RESISTOR/7.5" value="100k" x="19.05" y="19.05" rot="R90"/>
-<element name="IC3" library="ic_analogue" package="DIL14" value="TL084P" x="53.34" y="55.88" rot="R270"/>
-<element name="R28" library="resistors" package="RESISTOR/7.5" value="2k" x="63.5" y="63.5"/>
-<element name="R29" library="resistors" package="RESISTOR/7.5" value="300k" x="43.18" y="66.04"/>
+<element name="R10" library="resistors" package="RESISTOR/7.5" value="10k" x="31.75" y="67.31" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.242" y="69.85" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="33.0962" y="70.231" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R11" library="resistors" package="TRIMMER/64B" value="100k" x="35.56" y="69.85" smashed="yes">
+<attribute name="NAME" x="35.67" y="66.17" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="33.09" y="66.45" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="capacitors" package="CERAMICDISC/5" value="100pF" x="17.78" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.891" y="39.624" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="14.986" y="41.529" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="Q1" library="transistors" package="TO92" value="2N3904" x="7.62" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.985" y="31.115" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="8.89" y="31.115" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="Q2" library="transistors" package="TO92" value="2N3904" x="12.7" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.065" y="31.115" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="13.97" y="31.115" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R12" library="resistors" package="RESISTOR/7.5" value="10k" x="11.43" y="35.56" smashed="yes">
+<attribute name="NAME" x="8.89" y="35.052" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="8.509" y="36.9062" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R13" library="resistors" package="RESISTOR/7.5" value="1M" x="3.81" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="4.318" y="31.75" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.4638" y="31.369" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="Q3" library="transistors" package="TO92" value="2N3906" x="22.86" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.225" y="31.115" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="24.13" y="31.115" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="Q4" library="transistors" package="TO92" value="2N3906" x="17.78" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.145" y="31.115" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="19.05" y="31.115" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R14" library="resistors" package="RESISTOR/7.5" value="7.5k" x="26.67" y="26.67" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.178" y="24.13" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="25.3238" y="23.749" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R15" library="resistors" package="RESISTOR/7.5" value="7.5k" x="39.37" y="26.67" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.878" y="24.13" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="38.0238" y="23.749" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="IC2" library="ic_analogue" package="DIL16" value="LM13700N" x="33.02" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="30.734" y="20.701" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="31.115" y="11.303" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R16" library="resistors" package="RESISTOR/7.5" value="20k" x="26.67" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.162" y="19.05" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="28.0162" y="19.431" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R17" library="resistors" package="RESISTOR/7.5" value="20k" x="39.37" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.862" y="19.05" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="40.7162" y="19.431" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C2" library="capacitors" package="CERAMICDISC/5" value="220pF" x="38.1" y="40.64" smashed="yes">
+<attribute name="NAME" x="36.576" y="39.751" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="34.671" y="37.846" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C3" library="capacitors" package="CERAMICDISC/5" value="220pF" x="38.1" y="45.72" smashed="yes">
+<attribute name="NAME" x="36.576" y="44.831" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="34.671" y="42.926" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R18" library="resistors" package="RESISTOR/7.5" value="100k" x="46.99" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.482" y="21.59" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="48.3362" y="21.971" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R19" library="resistors" package="RESISTOR/7.5" value="100k" x="21.59" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.082" y="21.59" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="22.9362" y="21.971" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R20" library="resistors" package="RESISTOR/7.5" value="39k" x="41.91" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.418" y="6.35" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="40.5638" y="5.969" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R21" library="resistors" package="RESISTOR/7.5" value="100R" x="41.91" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="41.402" y="21.59" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="43.2562" y="21.971" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R22" library="resistors" package="RESISTOR/7.5" value="39k" x="24.13" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.638" y="6.35" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="22.7838" y="5.969" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R23" library="resistors" package="RESISTOR/7.5" value="100R" x="24.13" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.622" y="21.59" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="25.4762" y="21.971" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R24" library="resistors" package="RESISTOR/7.5" value="100k" x="44.45" y="19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.958" y="16.51" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="43.1038" y="16.129" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R25" library="resistors" package="RESISTOR/7.5" value="150k" x="53.34" y="5.08" smashed="yes">
+<attribute name="NAME" x="50.8" y="4.572" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="6.4262" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C4" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="43.18" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.704" y="51.689" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="46.609" y="53.594" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C5" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="38.1" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="39.624" y="36.449" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="41.529" y="38.354" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R26" library="resistors" package="RESISTOR/7.5" value="49.9k" x="43.18" y="55.88" smashed="yes">
+<attribute name="NAME" x="40.64" y="55.372" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="40.259" y="57.2262" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R27" library="resistors" package="RESISTOR/7.5" value="100k" x="19.05" y="19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.558" y="16.51" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="17.7038" y="16.129" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="IC3" library="ic_analogue" package="DIL14" value="TL084P" x="53.34" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="51.562" y="61.976" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="51.435" y="54.991" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R28" library="resistors" package="RESISTOR/7.5" value="2k" x="63.5" y="63.5" smashed="yes">
+<attribute name="NAME" x="60.96" y="62.992" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.579" y="64.8462" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R29" library="resistors" package="RESISTOR/7.5" value="300k" x="43.18" y="66.04" smashed="yes">
+<attribute name="NAME" x="40.64" y="65.532" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="40.259" y="67.3862" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="HP" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="50.8" smashed="yes">
 <attribute name="NAME" x="73.025" y="50.546" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R30" library="resistors" package="RESISTOR/7.5" value="1M" x="43.18" y="60.96" rot="R180"/>
-<element name="C6" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="58.42" rot="R180"/>
-<element name="R31" library="resistors" package="RESISTOR/7.5" value="1M" x="43.18" y="58.42" rot="R180"/>
-<element name="R32" library="resistors" package="RESISTOR/7.5" value="1M" x="43.18" y="63.5" rot="R180"/>
-<element name="C7" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="55.88" rot="R180"/>
-<element name="C8" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="60.96" rot="R180"/>
-<element name="AIN1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="60.96"/>
-<element name="AIN2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="55.88"/>
-<element name="AIN3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="58.42"/>
-<element name="R33" library="resistors" package="RESISTOR/7.5" value="4.7M" x="43.18" y="53.34"/>
-<element name="R34" library="resistors" package="RESISTOR/7.5" value="180k" x="46.99" y="44.45" rot="R270"/>
-<element name="R35" library="resistors" package="RESISTOR/7.5" value="150k" x="53.34" y="45.72" rot="R180"/>
-<element name="R36" library="resistors" package="RESISTOR/7.5" value="2k" x="63.5" y="45.72" rot="R180"/>
-<element name="C9" library="capacitors" package="CERAMICDISC/5" value="22pF" x="53.34" y="43.18" rot="R180"/>
+<element name="R30" library="resistors" package="RESISTOR/7.5" value="300k" x="43.18" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.72" y="61.468" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="46.101" y="59.6138" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C6" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.814" y="59.309" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="37.719" y="61.214" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R31" library="resistors" package="RESISTOR/7.5" value="300k" x="43.18" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.72" y="58.928" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="46.101" y="57.0738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R32" library="resistors" package="RESISTOR/7.5" value="300k" x="43.18" y="63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.72" y="64.008" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="46.101" y="62.1538" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C7" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.814" y="56.769" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="37.719" y="58.674" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C8" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="34.29" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.814" y="61.849" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="37.719" y="63.754" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="AIN1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="60.96" smashed="yes">
+<attribute name="NAME" x="26.035" y="60.706" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="AIN2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="55.88" smashed="yes">
+<attribute name="NAME" x="26.035" y="55.626" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="AIN3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="24.13" y="58.42" smashed="yes">
+<attribute name="NAME" x="26.035" y="58.166" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R33" library="resistors" package="RESISTOR/7.5" value="4.7M" x="43.18" y="53.34" smashed="yes">
+<attribute name="NAME" x="40.64" y="52.832" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="40.259" y="54.6862" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R34" library="resistors" package="RESISTOR/7.5" value="180k" x="46.99" y="44.45" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.482" y="46.99" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="48.3362" y="47.371" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R35" library="resistors" package="RESISTOR/7.5" value="150k" x="53.34" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="46.228" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.261" y="44.3738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R36" library="resistors" package="RESISTOR/7.5" value="2k" x="63.5" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="46.228" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="66.421" y="44.3738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C9" library="capacitors" package="CERAMICDISC/5" value="22pF" x="53.34" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.864" y="44.069" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.769" y="45.974" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="BP" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="45.72" smashed="yes">
 <attribute name="NAME" x="73.025" y="45.466" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R37" library="resistors" package="RESISTOR/7.5" value="4.7M" x="63.5" y="53.34" rot="R180"/>
-<element name="R38" library="resistors" package="RESISTOR/7.5" value="39k" x="63.5" y="50.8"/>
-<element name="R39" library="resistors" package="RESISTOR/7.5" value="150k" x="63.5" y="48.26" rot="R180"/>
-<element name="R40" library="resistors" package="RESISTOR/7.5" value="2k" x="69.85" y="52.07" rot="R90"/>
+<element name="R37" library="resistors" package="RESISTOR/7.5" value="4.7M" x="63.5" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="53.848" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="66.421" y="51.9938" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R38" library="resistors" package="RESISTOR/7.5" value="39k" x="63.5" y="50.8" smashed="yes">
+<attribute name="NAME" x="60.96" y="50.292" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.579" y="52.1462" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R39" library="resistors" package="RESISTOR/7.5" value="150k" x="63.5" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="48.768" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="66.421" y="46.9138" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R40" library="resistors" package="RESISTOR/7.5" value="2k" x="69.85" y="52.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="70.358" y="49.53" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="68.5038" y="49.149" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="LP" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="48.26" smashed="yes">
 <attribute name="NAME" x="73.025" y="48.006" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R41" library="resistors" package="RESISTOR/7.5" value="49.9k" x="63.5" y="60.96"/>
-<element name="R42" library="resistors" package="RESISTOR/7.5" value="150k" x="63.5" y="58.42" rot="R180"/>
-<element name="IC4" library="ic_analogue" package="DIL08" value="TL082P" x="63.5" y="34.29" rot="R270"/>
-<element name="R43" library="resistors" package="RESISTOR/7.5" value="100k" x="73.66" y="33.02"/>
-<element name="R44" library="resistors" package="RESISTOR/7.5" value="120k" x="73.66" y="35.56"/>
+<element name="R41" library="resistors" package="RESISTOR/7.5" value="49.9k" x="63.5" y="60.96" smashed="yes">
+<attribute name="NAME" x="60.96" y="60.452" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.579" y="62.3062" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R42" library="resistors" package="RESISTOR/7.5" value="150k" x="63.5" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="58.928" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="66.421" y="57.0738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="IC4" library="ic_analogue" package="DIL08" value="TL082P" x="63.5" y="34.29" smashed="yes" rot="R270">
+<attribute name="NAME" x="61.214" y="36.449" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="61.595" y="27.686" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R43" library="resistors" package="RESISTOR/7.5" value="100k" x="73.66" y="33.02" smashed="yes">
+<attribute name="NAME" x="71.12" y="32.512" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="70.739" y="34.3662" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R44" library="resistors" package="RESISTOR/7.5" value="120k" x="73.66" y="35.56" smashed="yes">
+<attribute name="NAME" x="71.12" y="35.052" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="70.739" y="36.9062" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="RES2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="20.32" smashed="yes">
 <attribute name="NAME" x="71.12" y="20.066" size="1.27" layer="25" ratio="10"/>
 </element>
@@ -657,34 +869,97 @@ Please make sure your boards conform to these design rules.</description>
 <element name="RES3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="22.86" smashed="yes">
 <attribute name="NAME" x="71.12" y="22.606" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R45" library="resistors" package="RESISTOR/7.5" value="49.9k" x="73.66" y="38.1"/>
-<element name="R46" library="resistors" package="RESISTOR/7.5" value="49.9k" x="63.5" y="27.94"/>
-<element name="R47" library="resistors" package="RESISTOR/7.5" value="100k" x="73.66" y="30.48"/>
+<element name="R45" library="resistors" package="RESISTOR/7.5" value="49.9k" x="73.66" y="38.1" smashed="yes">
+<attribute name="NAME" x="71.12" y="37.592" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="70.739" y="39.4462" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R46" library="resistors" package="RESISTOR/7.5" value="49.9k" x="63.5" y="27.94" smashed="yes">
+<attribute name="NAME" x="60.96" y="27.432" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.579" y="29.2862" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R47" library="resistors" package="RESISTOR/7.5" value="100k" x="73.66" y="30.48" smashed="yes">
+<attribute name="NAME" x="71.12" y="29.972" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="70.739" y="31.8262" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="XRES" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="77.47" y="17.78" smashed="yes">
 <attribute name="NAME" x="71.12" y="17.526" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R48" library="resistors" package="RESISTOR/7.5" value="100k" x="63.5" y="40.64"/>
-<element name="R50" library="resistors" package="RESISTOR/7.5" value="100k" x="53.34" y="35.56"/>
-<element name="R51" library="resistors" package="RESISTOR/7.5" value="100k" x="53.34" y="30.48" rot="R180"/>
-<element name="R52" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="33.02"/>
-<element name="R53" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="22.86" rot="R180"/>
-<element name="IC5" library="ic_analogue" package="DIL16" value="LM13700N" x="63.5" y="13.97" rot="R270"/>
-<element name="R54" library="resistors" package="RESISTOR/7.5" value="100R" x="53.34" y="17.78"/>
-<element name="R55" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="20.32" rot="R180"/>
-<element name="R56" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="12.7"/>
-<element name="R57" library="resistors" package="RESISTOR/7.5" value="4.7k" x="53.34" y="7.62"/>
-<element name="C10" library="capacitors" package="E2,5-6" value="10uF" x="19.05" y="62.23" rot="R270"/>
-<element name="C11" library="capacitors" package="E2,5-6" value="10uF" x="13.97" y="59.69" rot="R270"/>
-<element name="C12" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="27.94" y="33.02" rot="R180"/>
-<element name="C13" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="27.94" y="53.34" rot="R180"/>
-<element name="C14" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="53.34" y="66.04" rot="R180"/>
-<element name="C15" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="55.88"/>
-<element name="C16" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="25.4"/>
-<element name="C17" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="2.54"/>
-<element name="U$1" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="71.12"/>
-<element name="U$2" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="5.08"/>
-<element name="U$3" library="mechanical" package="STANDOFF/3.0" value="" x="76.2" y="71.12"/>
-<element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="76.2" y="5.08"/>
+<element name="R48" library="resistors" package="RESISTOR/7.5" value="100k" x="63.5" y="40.64" smashed="yes">
+<attribute name="NAME" x="60.96" y="40.132" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.579" y="41.9862" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R50" library="resistors" package="RESISTOR/7.5" value="100k" x="53.34" y="35.56" smashed="yes">
+<attribute name="NAME" x="50.8" y="35.052" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="36.9062" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R51" library="resistors" package="RESISTOR/7.5" value="100k" x="53.34" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="30.988" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.261" y="29.1338" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R52" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="33.02" smashed="yes">
+<attribute name="NAME" x="50.8" y="32.512" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="34.3662" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R53" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="23.368" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.261" y="21.5138" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="IC5" library="ic_analogue" package="DIL16" value="LM13700N" x="63.5" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="61.214" y="20.701" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="61.595" y="11.303" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R54" library="resistors" package="RESISTOR/7.5" value="100R" x="53.34" y="17.78" smashed="yes">
+<attribute name="NAME" x="50.8" y="17.272" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="19.1262" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R55" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="20.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="20.828" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.261" y="18.9738" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R56" library="resistors" package="RESISTOR/7.5" value="30k" x="53.34" y="12.7" smashed="yes">
+<attribute name="NAME" x="50.8" y="12.192" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="14.0462" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R57" library="resistors" package="RESISTOR/7.5" value="4.7k" x="53.34" y="7.62" smashed="yes">
+<attribute name="NAME" x="50.8" y="7.112" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="50.419" y="8.9662" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C10" library="capacitors" package="E2,5-6" value="10uF" x="19.05" y="62.23" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.574" y="59.563" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="16.383" y="59.563" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C11" library="capacitors" package="E2,5-6" value="10uF" x="13.97" y="59.69" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.494" y="57.023" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="11.303" y="57.023" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C12" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="27.94" y="33.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.464" y="33.909" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="31.369" y="35.814" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C13" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="27.94" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.464" y="54.229" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="31.369" y="56.134" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C14" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="53.34" y="66.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.864" y="66.929" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="56.769" y="68.834" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C15" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="55.88" smashed="yes">
+<attribute name="NAME" x="61.976" y="54.991" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.071" y="53.086" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C16" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="25.4" smashed="yes">
+<attribute name="NAME" x="61.976" y="24.511" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.071" y="22.606" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C17" library="capacitors" package="CERAMICDISC/5" value="0.1uF" x="63.5" y="2.54" smashed="yes">
+<attribute name="NAME" x="61.976" y="1.651" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.071" y="-0.254" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="U$1" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="71.12" smashed="yes"/>
+<element name="U$2" library="mechanical" package="STANDOFF/3.0" value="" x="3.81" y="5.08" smashed="yes"/>
+<element name="U$3" library="mechanical" package="STANDOFF/3.0" value="" x="76.2" y="71.12" smashed="yes"/>
+<element name="U$4" library="mechanical" package="STANDOFF/3.0" value="" x="76.2" y="5.08" smashed="yes"/>
 </elements>
 <signals>
 <signal name="-12V">
@@ -834,7 +1109,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R23" pad="1"/>
 <contactref element="IC3" pad="3"/>
 <contactref element="R33" pad="1"/>
-<contactref element="R34" pad="2"/>
 <contactref element="R34" pad="2"/>
 <contactref element="R38" pad="2"/>
 <contactref element="R37" pad="1"/>
@@ -1454,6 +1728,13 @@ Please make sure your boards conform to these design rules.</description>
 <via x="14.605" y="16.51" extent="1-16" drill="0.6"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
