@@ -296,6 +296,36 @@
 <text x="-6" y="9" size="1.778" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6" y="-11" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SWITCH_CHERRY_MX_RGB">
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.5"/>
+<pad name="2" x="2.54" y="5.08" drill="1.5"/>
+<pad name="CA" x="-1.27" y="-5.08" drill="0.75"/>
+<pad name="G" x="1.27" y="-5.08" drill="0.75"/>
+<text x="0" y="7.8" size="1.27" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
+<text x="0" y="-7.8" size="1.27" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<wire x1="-6.35" y1="-5.08" x2="6.35" y2="-5.08" width="0" layer="48"/>
+<pad name="R" x="-3.81" y="-5.08" drill="0.75"/>
+<pad name="B" x="3.81" y="-5.08" drill="0.75"/>
+<text x="-3.81" y="-3.81" size="0.8128" layer="52" font="vector" ratio="20" rot="MR0" align="bottom-center">R</text>
+<text x="-1.27" y="-3.81" size="0.8128" layer="52" font="vector" ratio="20" rot="MR0" align="bottom-center">CA</text>
+<text x="1.27" y="-3.81" size="0.8128" layer="52" font="vector" ratio="20" rot="MR0" align="bottom-center">G</text>
+<text x="3.81" y="-3.81" size="0.8128" layer="52" font="vector" ratio="20" rot="MR0" align="bottom-center">B</text>
+<wire x1="-5.8" y1="7.8" x2="-6.8" y2="7.8" width="0.15" layer="21"/>
+<wire x1="-6.8" y1="7.8" x2="-7.8" y2="6.8" width="0.15" layer="21" curve="90"/>
+<wire x1="-7.8" y1="6.8" x2="-7.8" y2="5.8" width="0.15" layer="21"/>
+<wire x1="5.8" y1="7.8" x2="6.8" y2="7.8" width="0.15" layer="21"/>
+<wire x1="6.8" y1="7.8" x2="7.8" y2="6.8" width="0.15" layer="21" curve="-90"/>
+<wire x1="7.8" y1="6.8" x2="7.8" y2="5.8" width="0.15" layer="21"/>
+<wire x1="5.8" y1="-7.8" x2="6.8" y2="-7.8" width="0.15" layer="21"/>
+<wire x1="6.8" y1="-7.8" x2="7.8" y2="-6.8" width="0.15" layer="21" curve="90"/>
+<wire x1="7.8" y1="-6.8" x2="7.8" y2="-5.8" width="0.15" layer="21"/>
+<wire x1="-5.8" y1="-7.8" x2="-6.8" y2="-7.8" width="0.15" layer="21"/>
+<wire x1="-6.8" y1="-7.8" x2="-7.8" y2="-6.8" width="0.15" layer="21" curve="-90"/>
+<wire x1="-7.8" y1="-6.8" x2="-7.8" y2="-5.8" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JACK">
@@ -374,6 +404,81 @@
 <pin name="1" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
 <pin name="2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="SWITCH_CHERRY_MX_RGB">
+<wire x1="5.08" y1="2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="-6.35" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="10.16" visible="pad" length="point" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="R-CAT" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-7.112" x2="2.159" y2="-8.509" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-6.985" x2="3.302" y2="-8.382" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.159" y="-8.509"/>
+<vertex x="1.27" y="-8.128"/>
+<vertex x="1.778" y="-7.62"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="-8.382"/>
+<vertex x="2.413" y="-8.001"/>
+<vertex x="2.921" y="-7.493"/>
+</polygon>
+<text x="2.54" y="12.7" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="2.54" y="-22.86" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="0" y1="-8.89" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="-11.43" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-8.89" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<pin name="COMMON-ANODE" x="7.62" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="G-CAT" x="-5.08" y="-10.16" visible="pad" length="short" direction="pas"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-12.192" x2="2.159" y2="-13.589" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-12.065" x2="3.302" y2="-13.462" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.159" y="-13.589"/>
+<vertex x="1.27" y="-13.208"/>
+<vertex x="1.778" y="-12.7"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="-13.462"/>
+<vertex x="2.413" y="-13.081"/>
+<vertex x="2.921" y="-12.573"/>
+</polygon>
+<wire x1="2.54" y1="-15.24" x2="0" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="0" y1="-13.97" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="0" y1="-16.51" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-13.97" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
+<pin name="B-CAT" x="-5.08" y="-15.24" visible="pad" length="short" direction="pas"/>
+<wire x1="2.54" y1="-15.24" x2="2.54" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-17.272" x2="2.159" y2="-18.669" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-17.145" x2="3.302" y2="-18.542" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.159" y="-18.669"/>
+<vertex x="1.27" y="-18.288"/>
+<vertex x="1.778" y="-17.78"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="-18.542"/>
+<vertex x="2.413" y="-18.161"/>
+<vertex x="2.921" y="-17.653"/>
+</polygon>
+<wire x1="0" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="WQP-PJ301M-12_JACK">
@@ -425,6 +530,26 @@
 <connect gate="ENCODER" pin="C" pad="C"/>
 <connect gate="SW" pin="1" pad="P1"/>
 <connect gate="SW" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_CHERRY_MX_RGB" prefix="SW">
+<gates>
+<gate name="G$1" symbol="SWITCH_CHERRY_MX_RGB" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="SWITCH_CHERRY_MX_RGB" package="SWITCH_CHERRY_MX_RGB">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="B-CAT" pad="B"/>
+<connect gate="G$1" pin="COMMON-ANODE" pad="CA"/>
+<connect gate="G$1" pin="G-CAT" pad="G"/>
+<connect gate="G$1" pin="R-CAT" pad="R"/>
 </connects>
 <technologies>
 <technology name=""/>
