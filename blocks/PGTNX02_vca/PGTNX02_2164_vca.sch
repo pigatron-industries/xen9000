@@ -1610,9 +1610,9 @@ high speed (Philips)</description>
 <attribute name="NAME" x="99.06" y="72.39" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="69.85" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="111.76" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.617" y="70.6374" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="110.617" y="75.7174" size="1.778" layer="96" rot="R180"/>
+<instance part="C15" gate="G$1" x="111.76" y="71.12" smashed="yes">
+<attribute name="NAME" x="112.903" y="71.6026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="112.903" y="66.5226" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY19" gate="GND" x="83.82" y="73.66" smashed="yes">
 <attribute name="VALUE" x="79.375" y="68.961" size="1.778" layer="96"/>
@@ -1752,8 +1752,6 @@ high speed (Philips)</description>
 <junction x="101.6" y="-38.1"/>
 </segment>
 <segment>
-<pinref part="C15" gate="G$1" pin="-"/>
-<wire x1="111.76" y1="76.2" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="GND"/>
 <wire x1="111.76" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="78.74" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
@@ -1761,6 +1759,8 @@ high speed (Philips)</description>
 <junction x="96.52" y="78.74"/>
 <pinref part="SUPPLY19" gate="GND" pin="PE"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="+"/>
+<wire x1="111.76" y1="73.66" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY21" gate="GND" pin="PE"/>
@@ -2036,9 +2036,9 @@ high speed (Philips)</description>
 <pinref part="IC1" gate="A" pin="OUT"/>
 <wire x1="104.14" y1="63.5" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
 <label x="116.84" y="63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="C15" gate="G$1" pin="+"/>
+<pinref part="C15" gate="G$1" pin="-"/>
 <wire x1="111.76" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="68.58" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="66.04" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
 <junction x="111.76" y="63.5"/>
 </segment>
 </net>
