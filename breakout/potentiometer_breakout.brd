@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -128,10 +128,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="2.413" y1="6.223" x2="15.418" y2="6.223" width="0" layer="20"/>
-<wire x1="15.418" y1="6.223" x2="15.418" y2="20.31" width="0" layer="20"/>
-<wire x1="15.418" y1="20.31" x2="2.413" y2="20.31" width="0" layer="20"/>
-<wire x1="2.413" y1="20.31" x2="2.413" y2="6.223" width="0" layer="20"/>
+<wire x1="6.223" y1="4.445" x2="19.228" y2="4.445" width="0" layer="20"/>
+<wire x1="19.228" y1="4.445" x2="19.228" y2="18.405" width="0" layer="20"/>
+<wire x1="19.228" y1="18.405" x2="6.223" y2="18.405" width="0" layer="20"/>
+<wire x1="6.223" y1="18.405" x2="6.223" y2="4.445" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="connectors">
@@ -153,27 +153,42 @@
 </library>
 <library name="controls">
 <packages>
-<package name="WQP-PJ301M-12_JACK">
-<wire x1="-4.5" y1="6" x2="-1.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="6" x2="1.5" y2="6" width="0.127" layer="21"/>
-<wire x1="1.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="6" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="0.2" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-4.5" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-4.5" x2="4.5" y2="6" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3.162275" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="6" x2="-1.5" y2="4" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0.127" layer="21"/>
-<wire x1="1.5" y1="4" x2="1.5" y2="6" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="5" drill="1.1" thermals="no"/>
-<pad name="P$2" x="0" y="-3.5" drill="1.1"/>
-<pad name="P$3" x="0" y="-6.5" drill="1.1"/>
-<circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-4.6" x2="-0.2" y2="-6.7" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-6.7" x2="0.2" y2="-6.7" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-6.7" x2="0.2" y2="-4.5" width="0.127" layer="21"/>
-<rectangle x1="-2.8" y1="-2.8" x2="2.8" y2="2.8" layer="41"/>
-<text x="-4.7498" y="-4.4704" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<package name="9MM_SNAP-IN_POT">
+<description>9mm vertical snap-in pot, Alpha / Panasonic style</description>
+<wire x1="-4.1" y1="5.4" x2="4.1" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="-5.35" width="0.2032" layer="51"/>
+<wire x1="4.1" y1="-5.9" x2="-4.1" y2="-5.9" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.65" y2="4.85" width="0.2032" layer="51"/>
+<wire x1="-4.75" y1="0.9" x2="-5.5" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-5.5" y1="0.9" x2="-5.5" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-5.5" y1="-0.9" x2="-4.75" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="4.75" y1="-0.9" x2="5.5" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="5.5" y1="-0.9" x2="5.5" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="5.5" y1="0.9" x2="4.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-4.1" y1="4.85" x2="-4.65" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.1" y1="5.4" x2="-4.1" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.1" y1="-5.35" x2="-4.1" y2="-5.9" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.1" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-5.35" x2="4.65" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-5.9" x2="4.1" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="4.85" x2="4.1" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.1" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="2.65" x2="-4.65" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.65" y2="-2.15" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="2.65" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="-2.15" x2="4.65" y2="-5.35" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.397" width="0.0508" layer="21"/>
+<pad name="1" x="-2.5" y="-7" drill="1.1" shape="square" rot="R270"/>
+<pad name="2" x="0" y="-7" drill="1.1" shape="octagon" rot="R270"/>
+<pad name="3" x="2.5" y="-7" drill="1.1" shape="octagon" rot="R270"/>
+<pad name="CHASSIS2" x="4.881" y="0" drill="1.524" diameter="2.286" rot="R270"/>
+<pad name="CHASSIS1" x="-4.881" y="0" drill="1.524" diameter="2.286" rot="R270"/>
+<text x="-3.81" y="2.54" size="1.0668" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.925" y1="-7.325" x2="-2.075" y2="-6" layer="51"/>
+<rectangle x1="-0.425" y1="-7.325" x2="0.425" y2="-6" layer="51"/>
+<rectangle x1="2.075" y1="-7.325" x2="2.925" y2="-6" layer="51"/>
+<circle x="0" y="0" radius="1.016" width="0.0508" layer="21"/>
 </package>
 </packages>
 </library>
@@ -364,39 +379,32 @@ einem neuen Namen ab.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="GND" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="3.81" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.572" y="9.525" size="1.016" layer="26" ratio="10" rot="MR90"/>
+<element name="2" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="12.7" y="12.7" smashed="yes"/>
+<element name="VR1" library="controls" package="9MM_SNAP-IN_POT" value="" x="12.7" y="12.7" smashed="yes">
+<attribute name="VALUE" x="8.89" y="8.89" size="1.27" layer="27"/>
 </element>
-<element name="NORM" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="11.43" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.922" y="9.525" size="1.016" layer="26" ratio="10" rot="MR90"/>
+<element name="1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="15.24" y="12.7" smashed="yes">
+<attribute name="NAME" x="17.145" y="12.446" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="SIG" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="13.97" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.462" y="9.525" size="1.016" layer="26" ratio="10" rot="MR90"/>
-</element>
-<element name="U$1" library="controls" package="WQP-PJ301M-12_JACK" value="WQP-PJ301M-12_JACK" x="8.89" y="13.97" smashed="yes"/>
-<element name="GND1" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="6.35" y="7.62" smashed="yes"/>
+<element name="3" library="connectors" package="HEADER/MALE/01" value="HEADER/MALE/01" x="10.16" y="12.7" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="U$1" pad="P$1"/>
-<contactref element="SIG" pad="1"/>
-<wire x1="13.97" y1="7.62" x2="13.97" y2="17.78" width="0.3048" layer="1"/>
-<wire x1="13.97" y1="17.78" x2="12.78" y2="18.97" width="0.3048" layer="1"/>
-<wire x1="12.78" y1="18.97" x2="8.89" y2="18.97" width="0.3048" layer="1"/>
+<contactref element="VR1" pad="3"/>
+<contactref element="1" pad="1"/>
+<wire x1="15.2" y1="5.7" x2="15.2" y2="12.66" width="0.3048" layer="1"/>
+<wire x1="15.2" y1="12.66" x2="15.24" y2="12.7" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="U$1" pad="P$2"/>
-<contactref element="NORM" pad="1"/>
-<wire x1="11.43" y1="7.62" x2="8.89" y2="10.16" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="10.16" x2="8.89" y2="10.47" width="0.3048" layer="1"/>
+<contactref element="VR1" pad="2"/>
+<contactref element="2" pad="1"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="5.7" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$6">
-<contactref element="U$1" pad="P$3"/>
-<contactref element="GND" pad="1"/>
-<contactref element="GND1" pad="1"/>
-<wire x1="3.81" y1="7.62" x2="6.35" y2="7.62" width="0.3048" layer="1"/>
-<wire x1="6.35" y1="7.62" x2="8.74" y2="7.62" width="0.3048" layer="1"/>
-<wire x1="8.74" y1="7.62" x2="8.89" y2="7.47" width="0.3048" layer="1"/>
+<signal name="N$3">
+<contactref element="VR1" pad="1"/>
+<contactref element="3" pad="1"/>
+<wire x1="10.2" y1="5.7" x2="10.16" y2="5.74" width="0.3048" layer="1"/>
+<wire x1="10.16" y1="5.74" x2="10.16" y2="12.7" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

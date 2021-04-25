@@ -21,9 +21,9 @@ Connections for Exponential mode:
 Connections for Linear mode:
 
 ```
-  * *-+
-  |   |
-  * * |
-      |
-  * *-+
+  * *--+
+  |    |
+  * *  |
+       |
+  * *--+
 ```
